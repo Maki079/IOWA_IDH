@@ -2,13 +2,23 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>IOWA-IDH</Name>
-    <LastWriteTime>2025-05-31T12:53:11.9596429Z</LastWriteTime>
+    <LastWriteTime>2025-05-31T15:05:39.5354968Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>AlkoholST.dtsx</Name>
-      <LastWriteTime>2025-05-31T13:47:27.0931985Z</LastWriteTime>
+      <Name>SklepSt.dtsx</Name>
+      <LastWriteTime>2025-05-31T14:55:40.1199891Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>AlkoholSt.dtsx</Name>
+      <LastWriteTime>2025-05-31T14:55:41.4384825Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Producent.dtsx</Name>
+      <LastWriteTime>2025-05-31T15:05:32.1658917Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
