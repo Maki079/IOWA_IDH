@@ -1,0 +1,928 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/5/2025 12:27:30 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VLAB003-12"
+  DTS:CreatorName="PJWSTK\s22499"
+  DTS:DTSID="{64C98DEA-C8B7-4521-A8EE-A8DED8739ED5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{70219A7E-914B-4994-BB47-8368AF56AFDE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s20806]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{796214F7-7171-404D-8B56-CD3E4D3767C6}"
+      DTS:ObjectName="db-mssql.s20806">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s20806;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{796214F7-7171-404D-8B56-CD3E4D3767C6}db-mssql.s20806;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{531FA02D-E95C-4EAD-9462-353FA832AFA8}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="Z:\IDH\events_2012-2025.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="慄整䔬敶瑮਍㔱〯⼲〲㌱∬⁁敭整牯攠灸潬敤⁳癯牥䌠敨祬扡湩歳‬畒獳慩‬湩番楲杮愠潲湵⁤ⰱ〵‰数灯敬愠摮搠浡条湩⁧癯牥㜠〬〰戠極摬湩獧∮਍㠲〯⼲〲㌱倬灯⁥敂敮楤瑣堠䥖爠獥杩獮⠠敆牢慵祲㈠⤸഻ㄊ⼳㌰㈯㄰ⰳ潐数䘠慲据獩椠⁳汥捥整⁤獡琠敨渠睥倠灯⁥䴨牡档ㄠ⤳മ《⼵㌰㈯㄰ⰳ敖敮畺汥湡倠敲楳敤瑮䠠杵⁯桃ꇃ敶⁺楤獥മ㈊⼴㐰㈯㄰ⰳ吢敨删湡⁡汐穡⁡畢汩楤杮挠汯慬獰獥椠⁮桄歡ⱡ䈠湡汧摡獥ⱨ欠汩楬杮漠敶⁲ⰱ〱‰数灯敬∮਍㈲〯⼵〲㌱∬牂瑩獩⁨潳摬敩⁲敌⁥楒执⁹獩洠牵敤敲⁤湩圠潯睬捩ⱨ䰠湯潤⁮祢䤠汳浡捩攠瑸敲業瑳⹳ഢ《⼱㜰㈯㄰ⰳ牃慯楴⁡敢潣敭⁳桴⁥㠲桴洠浥敢⁲景琠敨䔠牵灯慥⁮湕潩⹮਍㌰〯⼷〲㌱䔬祧瑰慩⁮牐獥摩湥⁴潍慨敭⁤潍獲⁩獩漠敶瑲牨睯⁮湩愠洠汩瑩牡⁹潣灵മ㈊⼲㜰㈯㄰ⰳ䈢物桴漠⁦牐湩散䜠潥杲⁥景圠污獥‬潳⁮景倠楲据⁥楗汬慩⁭湡⁤慃桴牥湩ⱥ䐠捵敨獳漠⁦慃扭楲杤⹥ഢ㈊⼱㠰㈯㄰ⰳ䌢敨業慣⁬敷灡湯⁳瑡慴正漠捣牵⁳湩䜠潨瑵ⱡ匠特慩‬敲潰瑲摥祬欠汩楬杮漠敶⁲ⰱ〴‰数灯敬∮਍㠲〯⼹〲㌱娬浡潢湡慧䌠瑩⁹牣獩獩椠⁮桴⁥桐汩灩楰敮⁳湩潶癬湩⁧楦桧楴杮戠瑥敷湥琠敨倠楨楬灰湩⁥潧敶湲敭瑮愠摮䴠牯⁯慎楴湯污䰠扩牥瑡潩⁮牆湯⁴䴨䱎⥆മㄊ⼷㤰㈯㄰ⰳ潒正瑳牡䜠浡獥爠汥慥敳⁳片湡⁤桔晥⁴畁潴嘠മㄊ⼵〱㈯㄰ⰳ䄢㜠㈮洠条楮畴敤攠牡桴畱歡⁥瑳楲敫⁳潂潨ⱬ倠楨楬灰湩獥‬楫汬湩⁧㈲′数灯敬∮਍㠰ㄯ⼱〲㌱∬祔桰潯⁮慈祩湡⠠潙慬摮⥡栠瑩⁳桴⁥桐汩灩楰敮⁳湡⁤楖瑥慮Ɑ欠汩楬杮愠灰潲楸慭整祬㘠ㄬ〵瀠潥汰⁥湩琠敨倠楨楬灰湩獥愠潬敮∮਍ㄲㄯ⼱〲㌱䔬牵浯楡慤⁮牰瑯獥獴戠来湩椠⁮歕慲湩⁥癯牥倠敲楳敤瑮夠湡歵癯捹❨⁳敤楣楳湯琠⁯畳灳湥⁤啅愠獳捯慩楴湯മ《⼵㈱㈯㄰ⰳ敎獬湯䴠湡敤慬搠敩⁳瑡琠敨愠敧漠⁦㔹※楨⁳畦敮慲⁬慴敫⁳汰捡⁥癯牥ㄠ‰慤獹漠⁦潭牵楮杮甠瑮汩䐠捥浥敢⁲㔱മㄊ⼱㄰㈯㄰ⰳ牆湡散氠畡据敨⁳業楬慴祲椠瑮牥敶瑮潩⁮湩䴠污⁩伨数慲楴湯匠牥慶⥬മㄊ⼵㐰㈯㄰ⰳ潂瑳湯䴠牡瑡潨⁮潢扭湩⁧楫汬⁳″湡⁤湩番敲⁳畨摮敲獤മ㈊⼴㤰㈯㄰ⰳ圢獥杴瑡⁥桳灯楰杮洠污⁬瑡慴正椠⁮慎物扯Ⱪ䬠湥慹∮਍㔱ㄯ⼲〲㌱䌬癩汩眠牡戠来湩⁳湩匠畯桴匠摵湡愠瑦牥愠瀠汯瑩捩污挠湯汦捩⁴獥慣慬整⁳湩潴瘠潩敬据⹥਍〱ㄯ⼲〲㌱∬牕杵慵⁹敢潣敭⁳桴⁥楦獲⁴潣湵牴⁹潴映汵祬氠来污穩⁥桴⁥牰摯捵楴湯‬慳敬‬湡⁤獵⁥景挠湡慮楢⹳ഢ㈊⼵㌰㈯㄰ⰳ䌢灹畲⁳敲散癩獥愠戠楡潬瑵映潲⁭桴⁥啅䤯䙍‬慭歲湩⁧桴⁥湥⁤景琠敨㈠㄰鎀〲㌱䌠灹楲瑯映湩湡楣污挠楲楳⹳ഢ㈊⼷㄰㈯㄰ⰳ䬢獩⁳楮桧捴畬⁢楦敲椠⁮慓瑮⁡慍楲ⱡ䈠慲楺ⱬ欠汩獬㈠㈴瀠潥汰⹥ഢㄊ⼹㘰㈯㄰ⰳ䄢扬牥慴映潬摯⁳晡敦瑣洠捵⁨景猠畯桴牥⁮汁敢瑲ⱡ䌠湡摡⹡ഢ㈊⼴㌰㈯㄰ⰳ䰢桡摡䐠瑡⁵瑳湡潤晦戠瑥敷湥䴠污祡楳湡映牯散⁳湡⁤潦汬睯牥⁳景琠敨匠汵慴⁮景匠汵⁵湩匠扡桡‬慍慬獹慩∮਍㠰〯⼴〲㌱∬慍杲牡瑥吠慨捴敨Ⱳ映牯敭⁲䭕倠楲敭䴠湩獩整Ⱳ搠敩⁳瑡愠敧㠠⸷ഢㄊ⼷㐰㈯㄰ⰳ慍杲牡瑥吠慨捴敨馀⁳畦敮慲⁬獩栠汥⁤湩䰠湯潤⹮਍㜰〯⼵〲㈱嘬慬楤業⁲畐楴⁮獩攠敬瑣摥倠敲楳敤瑮漠⁦畒獳慩映牯琠敨琠楨摲琠浩⹥਍〲〯⼷〲㈱∬畁潲慲‬潃潬慲潤猠潨瑯湩⁧捯畣獲搠牵湩⁧⁡業湤杩瑨猠牣敥楮杮漠⁦桔⁥慄歲䬠楮桧⁴楒敳ⱳ欠汩楬杮ㄠ′数灯敬愠摮椠橮牵湩⁧〷∮਍ㄱ〯⼹〲㈱䈬湥桧穡⁩瑡慴正氠慥獤琠⁯桴⁥敤瑡⁨景唠⁓流慢獳摡牯䨠‮桃楲瑳灯敨⁲瑓癥湥⁳湡⁤桴敲⁥瑯敨⁲流牥捩湡⹳਍㐱ㄯ⼰〲㈱匬祫楤敶⁲敆楬⁸慂浵慧瑲敮⁲敢潣敭⁳桴⁥楦獲⁴数獲湯琠⁯牢慥⁫桴⁥潳湵⁤慢牲敩⁲楷桴畯⁴⁡敶楨汣⁥畤楲杮愠映敲晥污⁬牦浯㌠‹浫⠠㐲洠汩獥 扡癯⁥慅瑲⹨਍㈰ㄯ⼱〲㈱䠬牵楲慣敮匠湡祤挠畡敳⁳灡牰硯浩瑡汥⁹㜤‰楢汬潩⁮湩搠浡条⁥湡⁤楫汬⁳㌲″数灯敬愠牣獯⁳楥桧⁴潣湵牴敩⹳਍㘰ㄯ⼱〲㈱∬慂慲正传慢慭眠湩⁳⁡敳潣摮琠牥⁭獡倠敲楳敤瑮漠⁦桴⁥湕瑩摥匠慴整ⱳ搠晥慥楴杮䴠瑩⁴潒湭祥∮਍㔱ㄯ⼱〲㈱∬楘䨠湩楰杮椠⁳汥捥整⁤獡䜠湥牥污匠捥敲慴祲漠⁦桴⁥桃湩獥⁥潃浭湵獩⁴慐瑲ⱹ戠捥浯湩⁧桴⁥敤映捡潴氠慥敤⁲景䌠楨慮∮਍㠰ㄯ⼲〲㈱∬湕瑩摥丠瑡潩獮䌠楬慭整䌠慨杮⁥潃普牥湥散椠⁮潄慨‬慑慴Ⱳ愠牧敥⁳潴攠瑸湥⁤桴⁥祋瑯⁯牐瑯捯汯甠瑮汩㈠㈰⸰ഢ《⼴㈱㈯㄰ⰲ吢灹潨湯䈠灯慨⠠慐汢⥯猠牴歩獥琠敨倠楨楬灰湩獥‬楫汬湩⁧癯牥ㄠ㘬〰瀠潥汰⹥ഢㄊ⼴㈱㈯㄰ⰲ匢湡祤䠠潯⁫汅浥湥慴祲匠档潯⁬桳潯楴杮椠⁮敎瑷睯Ɱ䌠湯敮瑣捩瑵‬敲畳瑬⁳湩琠敨搠慥桴⁳景㈠‶数灯敬‬湩汣摵湩⁧〲挠楨摬敲⹮ഢ《⼴㜰㈯㄰ⰲ䕃乒愠湮畯据獥琠敨搠獩潣敶祲漠⁦桴⁥楈杧⁳潢潳⁮慰瑲捩敬മㄊ⼰㈱㈯㄰ⰲ潃普楬瑣戠来湩⁳湩琠敨䌠湥牴污䄠牦捩湡删灥扵楬⁣楷桴愠爠扥汥愠汬慩据⁥慬湵档湩⁧湡漠晦湥楳敶മㄊ⼴ㄱ㈯㄰ⰲ獉慲汥氠畡据敨⁳灏牥瑡潩⁮楐汬牡漠⁦敄敦獮⁥条楡獮⁴桴⁥慈慭⵳潧敶湲摥䜠穡⁡瑓楲⹰਍㜰〯⼹〲㈱∬䅎䅓胢玙䌠牵潩楳祴爠癯牥琠歡獥愠猠汥楦⁥湯䴠牡⁳湡⁤潳湯搠獩潣敶獲攠楶敤据⁥景愠⁮湡楣湥⁴瑳敲浡敢Ɽ猠杵敧瑳湩⁧慰瑳眠瑡牥映潬⁷湯琠敨瀠慬敮⹴ഢㄊ⼷㌰㈯㄰ⰲ匢敨潮摵⁡䥉ⱉ倠灯⁥景琠敨䌠灯楴⁣牏桴摯硯䌠畨捲⁨景䄠敬慸摮楲ⱡ搠敩⹳ഢㄊ⼸ㄱ㈯㄰ⰲ慔慷牤獯䤠⁉獩攠瑮牨湯摥愠⁳桴⁥ㄱ琸⁨潐数漠⁦汁硥湡牤慩愠摮倠瑡楲牡档漠⁦桴⁥敓⁥景匠⹴䴠牡⹫਍㜲〯⼲〲㈱夬浥湥⁩牐獥摩湥⁴汁⁩扁畤汬桡匠污桥漠晦捩慩汬⁹瑳灥⁳潤湷愠摮琠慲獮敦獲瀠睯牥琠⁯楖散倠敲楳敤瑮䄠摢慲扢桵䴠湡畳⁲慈楤മ《⼶㐰㈯㄰ⰲ吢敨䴠䱎⁁丨瑡潩慮⁬潍敶敭瑮映牯琠敨䰠扩牥瑡潩⁮景䄠慺慷⥤搠捥慬敲⁳桴⁥湩敤数摮湥散漠⁦穁睡摡映潲⁭慍楬‬湩瑩慩楴杮琠敨丠牯桴牥⁮慍楬挠湯汦捩⹴ഢㄊ⼸㈰㈯㄰ⰴ䔢牵浯楡慤⁮牰瑯獥獴攠捳污瑡⁥湩潴爠癥汯瑵潩⁮湩唠牫楡敮‬敬摡湩⁧潴琠敨漠獵楴杮漠⁦牐獥摩湥⁴楖瑫牯夠湡歵癯捹⹨ഢㄊ⼸㌰㈯㄰ⰴ畒獳慩愠湮硥獥䌠楲敭⁡潦汬睯湩⁧⁡楤灳瑵摥爠晥牥湥畤⹭਍㘰〯⼴〲㐱圬牡椠⁮潄扮獡戠来湩⁳敢睴敥⁮歕慲湩慩⁮潦捲獥愠摮瀠潲刭獵楳湡猠灥牡瑡獩獴മ《⼸㌰㈯㄰ⰴ慍慬獹慩䄠物楬敮⁳汆杩瑨㌠〷搠獩灡数牡⁳湥爠畯整映潲⁭畋污⁡界灭牵琠⁯敂橩湩⁧楷桴㈠㤳瀠潥汰⁥湯戠慯摲മㄊ⼶㐰㈯㄰ⰴ吢敨䴠⁖敓潷⁬敦牲⁹楳歮⁳景⁦桴⁥潣獡⁴景匠畯桴䬠牯慥‬楫汬湩⁧〳‴景㐠㘷瀠獡敳杮牥钀㔲‰景眠潨⁭敷敲栠杩⁨捳潨汯猠畴敤瑮⹳ഢ㈊⼲㔰㈯㄰ⰴ⁁業楬慴祲挠畯⁰湩吠慨汩湡⁤畯瑳⁳牐浩⁥楍楮瑳牥夠湩汧捵⁫桓湩睡瑡慲猧挠牡瑥歡牥朠癯牥浮湥⹴਍㤱〯⼶〲㐱䬬湩⁧畊湡䌠牡潬⁳⁉景匠慰湩映牯慭汬⁹扡楤慣整⁳桴⁥桴潲敮※楨⁳潳⁮獩挠潲湷摥䬠湩⁧敆楬数嘠⹉਍㤰〯⼸〲㐱∬楍档敡⁬牂睯Ɱ愠⁮湵牡敭⁤晁楲慣⵮流牥捩湡琠敥慮敧Ⱳ椠⁳慦慴汬⁹桳瑯戠⁹潰楬散椠⁮敆杲獵湯‬楍獳畯楲‬灳牡楫杮眠摩獥牰慥⁤牰瑯獥獴∮਍㠱〯⼹〲㐱匬潣汴湡⁤潨摬⁳⁡敲敦敲摮浵愠摮瘠瑯獥琠⁯敲慭湩瀠牡⁴景琠敨唠楮整⁤楋杮潤⁭㔨⸵┳琠⁯㐴㜮⤥മㄊ⼲ㄱ㈯㄰ⰴ卅馀⁳潒敳瑴⁡業獳潩⁮畳捣獥晳汵祬氠湡獤琠敨倠楨慬⁥牰扯⁥湯䌠浯瑥㘠倷䌯畨祲浵癯胢䞓牥獡浩湥潫钀琠敨映物瑳攭敶⁲潣敭⁴慬摮湩⹧਍㘱ㄯ⼲〲㐱∬敔牨歩椭吭污扩湡倠歡獩慴⁮瑡慴正⁳桴⁥牁祭倠扵楬⁣捓潨汯椠⁮敐桳睡牡‬楫汬湩⁧㐱‹数灯敬‬湩汣摵湩⁧癯牥ㄠ〳猠畴敤瑮⹳ഢ《⼱〱㈯㄰ⰴ圢牯瑳䔠潢慬攠楰敤業⁣湩栠獩潴祲瀠慥獫椠⁮敗瑳䄠牦捩ⱡ瀠楲慭楲祬椠⁮畇湩慥‬楌敢楲ⱡ愠摮匠敩牲⁡敌湯⹥ഢㄊ⼷㜰㈯㄰ⰴ䴢污祡楳⁡楁汲湩獥䘠楬桧⁴㜱椠⁳桳瑯搠睯⁮癯牥攠獡整湲唠牫楡敮‬楫汬湩⁧污⁬㤲‸数灯敬漠⁮潢牡⹤ഢ㈊⼴㜰㈯㄰ⰴ䄢物䄠杬꧃楲⁥汆杩瑨㔠㄰‷牣獡敨⁳湩䴠污⁩畤⁥潴戠摡眠慥桴牥‬楫汬湩⁧污⁬ㄱ‶慰獳湥敧獲愠摮挠敲⹷ഢ㈊⼸㈱㈯㄰ⰴ䤢摮湯獥慩䄠物獁慩䘠楬桧⁴㔸㄰挠慲桳獥椠瑮⁯桴⁥慊慶匠慥‬楫汬湩⁧污⁬㘱′数灯敬漠⁮潢牡⹤ഢ㈊⼶㠰㈯㄰ⰴ㈢㄰‴慇慺圠牡⠠灏牥瑡潩⁮牐瑯捥楴敶䔠杤⥥爠獥汵獴椠⁮癯牥㈠ㄬ〰倠污獥楴楮湡愠摮㜠‱獉慲汥⁩敤瑡獨∮਍㔰〯⼶〲㐱∬卉䱉戠来湩⁳⁡慭潪⁲景敦獮癩⁥湩渠牯桴牥⁮牉煡‬慣瑰牵湩⁧潍畳⁬湯䨠湵⁥〱※单氭摥挠慯楬楴湯愠物瑳楲敫⁳敢楧⁮湩䄠杵獵⹴ഢㄊ⼶㔰㈯㄰ⰴ慎敲摮慲䴠摯⁩獩攠敬瑣摥倠楲敭䴠湩獩整⁲景䤠摮慩愠瑦牥愠氠湡獤楬敤眠湩戠⁹桴⁥桂牡瑡祩⁡慊慮慴倠牡祴⠠䩂⥐മ㈊⼲㜰㈯㄰ⰴ潊潫圠摩摯⁯楷獮䤠摮湯獥慩胢玙瀠敲楳敤瑮慩⁬汥捥楴湯മㄊ⼶㔰㈯㄰ⰴ敓潣摮䰠扩慹⁮楃楶⁬慗⁲敢楧獮映汯潬楷杮挠湯整瑳摥瀠牡楬浡湥慴祲攠敬瑣潩獮愠摮爠獩湩⁧業楬楴⁡楶汯湥散മ《⼱㄰㈯㄰ⰵ䄢浲湥慩‬敂慬畲ⱳ䬠穡歡獨慴Ɱ䬠特祧獺慴Ɱ愠摮删獵楳⁡潦浲琠敨䔠牵獡慩⁮捅湯浯捩唠楮湯∮਍㌰〯⼱〲㔱∬潂潫䠠牡浡挠牡楲獥漠瑵愠洠獡慳牣⁥湩䈠条ⱡ丠杩牥慩‬楫汬湩⁧癯牥㈠〬〰瀠潥汰⁥湡⁤慬整⁲汰摥敧⁳污敬楧湡散琠⁯卉䱉⠠獉慬業⁣瑓瑡⁥景䤠慲ⁱ湡⁤桴⁥敌慶瑮⸩ഢ《⼷㄰㈯㄰ⰵ䌢慨汲敩䠠扥潤愠瑴捡獫愠摮爠汥瑡摥猠潨瑯湩獧漠捣牵椠⁮慐楲ⱳ䘠慲据ⱥ欠汩楬杮ㄠ‷数灯敬∮਍㔲〯⼱〲㔱听敨䴠浡獡灡湡⁯汣獡⁨湩琠敨倠楨楬灰湩獥氠慥獤琠⁯桴⁥敤瑡⁨景㐠‴潰楬散挠浯慭摮獯⠠乐ⵐ䅓⥆椠⁮慍畧湩慤慮⹯਍㐲〯⼳〲㔱∬敇浲湡楷杮⁳汆杩瑨㤠㈵‵獩搠汥扩牥瑡汥⁹牣獡敨⁤湩潴琠敨䘠敲据⁨汁獰戠⁹桴⁥潣瀭汩瑯‬楫汬湩⁧污⁬㔱‰数灯敬愠潢牡⹤ഢ㈊⼰㌰㈯㄰ⰵ吢湵獩䈠牡潤丠瑡潩慮⁬畍敳浵愠瑴捡⁫楫汬⁳㈲瀠潥汰ⱥ洠獯汴⁹潦敲杩⁮潴牵獩獴∮਍㈰〯⼴〲㔱∬慇楲獳⁡湕癩牥楳祴䌠汯敬敧愠瑴捡⁫湩䬠湥慹戠⁹汁匭慨慢扡‬楫汬⁳㐱‸数灯敬∮਍㔲〯⼴〲㔱∬牆摥楤⁥片祡猧搠慥桴椠⁮潰楬散挠獵潴祤氠慥獤琠⁯牰瑯獥獴愠摮甠牮獥⁴湩䈠污楴潭敲‬慍祲慬摮∮਍㔲〯⼴〲㔱∬⁁⸷‸慭湧瑩摵⁥慥瑲煨慵敫猠牴歩獥丠灥污‬楫汬湩⁧癯牥㠠㠬〰瀠潥汰⹥䄠瑦牥桳捯獫愠摮爠汥瑡摥焠慵敫⁳牢湩⁧桴⁥潴汬琠⁯癯牥ㄠⰰ〰⸰ഢㄊ⼳㔰㈯㄰ⰵ䬢湥整⁸汳灩数⁲慦瑣牯⁹楦敲椠⁮慖敬穮敵慬‬桐汩灩楰敮ⱳ欠汩獬㜠‴潷歲牥⹳ഢㄊ⼷㘰㈯㄰ⰵ桃牡敬瑳湯挠畨捲⁨桳潯楴杮椠⁮潓瑵⁨慃潲楬慮欠汩獬㤠䄠牦捩湡䄭敭楲慣⁮慰楲桳潩敮獲搠牵湩⁧⁡楂汢⁥瑳摵⁹敳獳潩⹮਍㘲〯⼶〲㔱∬卉䱉愭晦汩慩整⁤整牲牯獩⁴瑡慴正⁳捯畣⁲楳畭瑬湡潥獵祬椠⁮牆湡散‬畋慷瑩‬湡⁤畔楮楳⹡ഢ㈊⼶㘰㈯㄰ⰵ桔⁥⹕⹓匠灵敲敭䌠畯瑲氠来污穩獥猠浡ⵥ敳⁸慭牲慩敧渠瑡潩睮摩⁥湩琠敨传敢杲晥汥⁬⹶䠠摯敧⁳畲楬杮മㄊ⼴㜰㈯㄰ⰵ桔⁥潊湩⁴潃灭敲敨獮癩⁥汐湡漠⁦捁楴湯⠠牉湡渠捵敬牡搠慥⥬椠⁳条敲摥甠潰⁮祢䤠慲⁮湡⁤楳⁸慭潪⁲潰敷獲⠠㕐ㄫ⸩਍㔰〯⼸〲㔱∬楄捳癯牥⁹景䠠浯⁯慮敬楤‬⁡敮⁷灳捥敩⁳景攠牡祬栠浵湡‬湡潮湵散⁤湩匠畯桴䄠牦捩⹡ഢ㌊⼰㤰㈯㄰ⰵ刢獵楳⁡敢楧獮愠物瑳楲敫⁳湩匠特慩‬慴杲瑥湩⁧卉䱉愠摮漠桴牥漠灰獯瑩潩⁮牧畯獰∮਍〳〯⼹〲㔱䰬煩極⁤慷整⁲獩挠湯楦浲摥漠⁮慍獲戠⁹䅎䅓മ㌊⼱〱㈯㄰ⰵ䴢瑥潲敪⁴汆杩瑨㤠㘲‸獩戠浯敢⁤癯牥琠敨匠湩楡倠湥湩畳慬‬楫汬湩⁧㈲‴数灯敬‮卉䱉挠慬浩⁳敲灳湯楳楢楬祴∮਍㌱ㄯ⼱〲㔱∬⁁潣牯楤慮整⁤敳楲獥漠⁦整牲牯獩⁴瑡慴正⁳湩倠牡獩‬湩汣摵湩⁧桴⁥慂慴汣湡挠湯散瑲栠污ⱬ欠汩獬ㄠ〳瀠潥汰⹥ഢ《⼷ㄱ㈯㄰ⰵ敌摡牥⁳景䌠楨慮愠摮吠楡慷⁮敭瑥映牯琠敨映物瑳琠浩⁥楳据⁥㤱㤴椠⁮楓杮灡牯⁥堨⁩楊灮湩⁧湡⁤慍夠湩ⵧ敪畯⸩਍〳ㄯ⼱〲㔱听敨倠牡獩䄠牧敥敭瑮漠⁮汣浩瑡⁥档湡敧椠⁳摡灯整⁤祢ㄠ㔹渠瑡潩獮മㄊ⼷㈱㈯㄰ⰵ桔⁥湕瑩摥匠慴整⁳湡⁤畃慢映牯慭汬⁹敲瑳牯⁥畦汬搠灩潬慭楴⁣敲慬楴湯⹳਍㜲〯⼲〲㔱∬潂楲⁳敎瑭潳ⱶ删獵楳湡漠灰獯瑩潩⁮敬摡牥‬獩愠獳獡楳慮整⁤敮牡琠敨䬠敲汭湩椠⁮潍捳睯∮਍㜲〯⼵〲㔱∬䥆䅆挠牯畲瑰潩⁮捳湡慤⁬敢楧獮眠瑩⁨牡敲瑳⁳景猠癥牥污漠晦捩慩獬椠⁮畚楲档‬敬摡湩⁧潴洠橡牯椠癮獥楴慧楴湯⹳ഢㄊ⼴㤰㈯㄰ⰵ䅎䅓猧䐠睡⁮業獳潩⁮敳摮⁳桴⁥楦獲⁴汣獯ⵥ灵椠慭敧⁳景䌠牥獥മㄊ⼴㜰㈯㄰ⰵ䅎䅓胢玙丠睥䠠牯穩湯⁳灳捡捥慲瑦瀠潲楶敤⁳桴⁥楦獲⁴汣獯ⵥ灵椠慭敧⁳景倠畬潴മㄊ⼸㤰㈯㄰ⰵ潖歬睳条湥攠業獳潩獮猠慣摮污戠来湩⁳桷湥琠敨挠浯慰祮愠浤瑩⁳潴挠敨瑡湩⁧湯搠敩敳⁬浥獩楳湯⁳整瑳⹳਍㈰〯⼱〲㘱∬瑁慴正漠⁮桴⁥慓摵⁩楤汰浯瑡捩洠獩楳湯⁳湩䤠慲Ɱ猠慰歲湩⁧⁡慭潪⁲楤汰浯瑡捩爠晩⹴ഢㄊ⼶㄰㈯㄰ⰶ桔⁥湕瑩摥丠瑡潩獮氠晩獴猠湡瑣潩獮漠⁮牉湡映汯潬楷杮挠湯楦浲瑡潩⁮景䤠慲馀⁳潣灭楬湡散眠瑩⁨桴⁥畮汣慥⁲敤污⠠䍊佐⥁മ《⼶㈰㈯㄰ⰶ〲㘱匠畯桴牥⁮慔睩湡攠牡桴畱歡⁥楫汬⁳瑡氠慥瑳ㄠ㜱瀠潥汰⹥਍ㄱ〯⼲〲㘱∬捓敩瑮獩獴愠湮畯据⁥䥌佇猧搠瑥捥楴湯漠⁦牧癡瑩瑡潩慮⁬慷敶ⱳ挠湯楦浲湩⁧楅獮整湩猧琠敨牯⹹ഢㄊ⼲㈰㈯㄰ⰶ潐数䘠慲据獩愠摮倠瑡楲牡档䬠物汩⁬敭瑥椠⁮畃慢愠摮猠杩⁮桴⁥捅浵湥捩污䐠捥慬慲楴湯胢暔物瑳猠捵⁨敭瑥湩⁧楳据⁥桴⁥片慥⁴捓楨浳漠⁦〱㐵മㄊ⼵㌰㈯㄰ⰶ䄢灬慨潇搠晥慥獴琠灯䜠⁯汰祡牥䰠敥匠摥汯‬楷湮湩⁧‴畯⁴景㔠洠瑡档獥椠⁮敓畯ⱬ匠畯桴䬠牯慥∮਍〲〯⼳〲㘱∬慂慲正传慢慭瘠獩瑩⁳畃慢‬桴⁥楦獲⁴⹕⹓倠敲楳敤瑮琠⁯潤猠⁯楳据⁥㤱㠲∮਍㈲〯⼳〲㘱䈬畲獳汥⁳潢扭湩獧欠汩⁬㈳挠癩汩慩獮愠摮㌠愠瑴捡敫獲愠⁴桴⁥楡灲牯⁴湡⁤敭牴⁯瑳瑡潩⹮䤠䥓⁌汣楡獭爠獥潰獮扩汩瑩⹹਍㐲〯⼳〲㘱刬摡癯湡䬠牡摡뻅쑩₇獩猠湥整据摥琠⁯〴礠慥獲椠⁮牰獩湯映牯朠湥捯摩⁥湡⁤慷⁲牣浩獥戠⁹桴⁥䍉奔മ《⼳㐰㈯㄰ⰶ吢敨倠湡浡⁡慐数獲氠慥⁫獩瀠扵楬桳摥‬敲敶污湩⁧慭獳癩⁥汧扯污漠晦桳牯⁥潨摬湩獧愠摮挠牯畲瑰潩⹮ഢ《⼹㔰㈯㄰ⰶ刢摯楲潧䐠瑵牥整眠湩⁳桴⁥桐汩灩楰敮⁳牰獥摩湥楴污攠敬瑣潩Ɱ氠畡据楨杮愠挠湯牴癯牥楳污眠牡漠⁮牤杵⹳ഢ《⼱㘰㈯㄰ⰶ吢敨䜠瑯桴牡⁤慂敳吠湵敮⁬湩匠楷穴牥慬摮‬桴⁥潷汲馀⁳潬杮獥⁴湡⁤敤灥獥⁴慲汩琠湵敮ⱬ漠晦捩慩汬⁹灯湥⹳ഢㄊ⼲㘰㈯㄰ⰶ伢汲湡潤渠杩瑨汣扵猠潨瑯湩⁧楫汬⁳㤴愠摮椠橮牵獥㔠″瑡倠汵敳‬⁡慧⁹汣扵椠⁮汆牯摩⹡吠敨搠慥汤敩瑳洠獡⁳桳潯楴杮椠⁮⹕⹓栠獩潴祲愠⁴桴⁥楴敭∮਍㌲〯⼶〲㘱听敨唠楮整⁤楋杮潤⁭潶整⁳潴氠慥敶琠敨䔠牵灯慥⁮湕潩⁮湩琠敨䈠敲楸⁴敲敦敲摮浵⠠ㄵ㤮‥敌癡⥥മㄊ⼳㜰㈯㄰ⰶ䐢癡摩䌠浡牥湯爠獥杩獮‬湡⁤桔牥獥⁡慍⁹敢潣敭⁳桴⁥敳潣摮映浥污⁥䭕倠楲敭䴠湩獩整⹲ഢ㈊⼸㘰㈯㄰ⰶ獉慴扮汵䄠慴썴犼⁫楁灲牯⁴瑡慴正欠汩獬㐠‵湡⁤湩番敲⁳癯牥㈠〳‮卉䱉椠⁳汢浡摥മ《⼴㜰㈯㄰ⰶ䅎䅓胢玙䨠湵⁯灳捡捥慲瑦攠瑮牥⁳畊楰整馀⁳牯楢⁴潴猠畴祤琠敨朠獡朠慩瑮മㄊ⼴㜰㈯㄰ⰶ楎散琠畲正愠瑴捡⁫楫汬⁳㘸瀠潥汰⁥畤楲杮䈠獡楴汬⁥慄⁹散敬牢瑡潩獮‮卉䱉挠慬浩⁳敲灳湯楳楢楬祴മㄊ⼶㜰㈯㄰ⰶ⁁慦汩摥挠畯⁰馀꧃慴⁴湩吠牵敫⁹敬摡⁳潴洠獡⁳牡敲瑳⁳湡⁤潧敶湲敭瑮瀠牵敧⹳਍㔰〯⼸〲㘱∬〲㘱匠浵敭⁲汏浹楰獣栠汥⁤湩删潩搠⁥慊敮物Ɐ䈠慲楺⹬ഢ《⼳㠰㈯㄰ⰶ浉数捡浨湥⁴景䈠慲楺楬湡倠敲楳敤瑮䐠汩慭删畯獳晥⁦獩愠灰潲敶⁤祢琠敨匠湥瑡⹥਍〲〯⼸〲㘱䐬慨慫挠晡꧃愠瑴捡⁫湩䈠湡汧摡獥⁨湥獤眠瑩⁨㤲搠慥桴⁳椨据畬楤杮愠瑴捡敫獲愠摮栠獯慴敧⥳മ《⼴㤰㈯㄰ⰶ潍桴牥吠牥獥⁡獩挠湡湯穩摥愠⁳⁡慳湩⁴祢倠灯⁥牆湡楣⁳湩嘠瑡捩湡䌠瑩⹹਍㔱〯⼹〲㘱听敨倠湡浡⁡慃慮⁬硥慰獮潩⁮獩挠浯汰瑥摥愠摮漠数敮⁤潦⁲潣浭牥楣污猠楨灰湩⹧਍㌱ㄯ⼰〲㘱䬬湩⁧桂浵扩汯䄠畤祬摡橥漠⁦桔楡慬摮搠敩⁳晡整⁲⁡〷礭慥⁲敲杩㭮栠獩猠湯嘠橡物污湯歧牯⁮畳捣敥獤栠浩മ《⼷〱㈯㄰ⰶ桔⁥⹕⹓朠癯牥浮湥⁴景楦楣污祬戠慬敭⁳畒獳慩映牯椠瑮牥敦敲据⁥湩琠敨㈠㄰‶汥捥楴湯മ《⼲〱㈯㄰ⰶ桔⁥潃潬扭慩⁮数捡⁥敤污眠瑩⁨䅆䍒椠⁳慮牲睯祬爠橥捥整⁤湩愠爠晥牥湥畤⹭਍㐰ㄯ⼱〲㘱听敨倠牡獩䄠牧敥敭瑮漠⁮汣浩瑡⁥档湡敧漠晦捩慩汬⁹湥整獲椠瑮⁯潦捲⹥਍㠰ㄯ⼱〲㘱∬潄慮摬吠畲灭椠⁳汥捥整⁤牐獥摩湥⁴景琠敨唠楮整⁤瑓瑡獥‬敤敦瑡湩⁧楈汬牡⁹汃湩潴⹮ഢ㈊⼵㈱㈯㄰ⰶ畒獳慩⁮流慢獳摡牯琠⁯畔歲祥䄠摮敲⁩態汲癯椠⁳獡慳獳湩瑡摥椠⁮湁慫慲搠牵湩⁧湡愠瑲攠桸扩瑩潩⹮਍㐰ㄯ⼲〲㘱∬楆敤⁬慃瑳潲猧猠慴整映湵牥污栠汥⁤湩匠湡楴条⁯敤䌠扵⁡晡整⁲楨⁳敤瑡⁨湯丠癯浥敢⁲㔲‬〲㘱∮਍〲〯⼱〲㜱䐬湯污⁤牔浵⁰獩椠慮杵牵瑡摥愠⁳桴⁥㔴桴倠敲楳敤瑮漠⁦桴⁥湕瑩摥匠慴整⹳਍ㄲ〯⼱〲㜱圬浯湥猧䴠牡档搠慲獷洠汩楬湯⁳潷汲睤摩⁥湩瀠潲整瑳漠⁦牔浵❰⁳湩畡畧慲楴湯മㄊ⼳㈰㈯㄰ⰷ䬢浩䨠湯ⵧ慮Ɑ栠污ⵦ牢瑯敨⁲景䬠浩䨠湯ⵧ湵‬獩愠獳獡楳慮整⁤湩䬠慵慬䰠浵異Ⱳ䴠污祡楳⹡ഢㄊ⼰㌰㈯㄰ⰷ潓瑵⁨潋敲湡倠敲楳敤瑮倠牡⁫敇湵栭敹椠⁳潦浲污祬椠灭慥档摥戠⁹桴⁥潃獮楴畴楴湯污䌠畯瑲മ《⼹㔰㈯㄰ⰷ潍湯䨠敡椭⁮獩攠敬瑣摥倠敲楳敤瑮漠⁦潓瑵⁨潋敲⹡਍㌱〯⼵〲㜱∬潐数䘠慲据獩挠湡湯穩獥䨠捡湩慴愠摮䘠慲据獩潣䴠牡潴‬桴⁥썆璡浩⁡楶楳湯牡敩⹳ഢ㈊⼲㔰㈯㄰ⰷ慍据敨瑳牥䄠敲慮戠浯楢杮愠⁴湡䄠楲湡⁡片湡敤挠湯散瑲欠汩獬㈠′湡⁤湩番敲⁳癯牥ㄠ〴മ㈊⼳㔰㈯㄰ⰷ桔⁥楓来⁥景䴠牡睡⁩敢楧獮椠⁮桴⁥桐汩灩楰敮⁳敢睴敥⁮桴⁥潧敶湲敭瑮愠摮䴠畡整朠潲灵മ《⼲㘰㈯㄰ⰷ敒潳瑲⁳潗汲⁤慍楮慬愠瑴捡⁫楫汬⁳㘳瀠潥汰⹥਍㐱〯⼶〲㜱听敨䜠敲普汥⁬潔敷⁲楦敲椠⁮潌摮湯欠汩獬㜠′湡⁤湩番敲⁳〷മㄊ⼲㠰㈯㄰ⰷ唢楮整琠敨删杩瑨爠污祬椠⁮桃牡潬瑴獥楶汬ⱥ嘠物楧楮㭡眠楨整猠灵敲慭楣瑳愠瑴捡⁫楫汬⁳‱湡⁤湩番敲⁳㤱挠畯瑮牥瀭潲整瑳牥⹳ഢㄊ⼹㤰㈯㄰ⰷ吢潷攠牡桴畱歡獥猠牴歩⁥敍楸潣‬楫汬湩⁧癯牥㐠〰瀠潥汰⁥㠨ㄮ洠条楮畴敤漠⁮敓瑰㠠愠摮㜠ㄮ漠⁮敓瑰ㄠ⤹∮਍㄰ㄯ⼰〲㜱䰬獡嘠来獡洠獡⁳桳潯楴杮愠⁴⁡畭楳⁣敦瑳癩污欠汩獬㘠‰湡⁤湩番敲⁳畨摮敲獤钀琠敨搠慥汤敩瑳椠⁮潭敤湲唠匮‮楨瑳牯⹹਍㐱ㄯ⼰〲㜱䴬杯摡獩畨戠浯楢杮椠⁮潓慭楬⁡楫汬⁳㠵‷湡⁤湩番敲⁳癯牥㌠〰钀漠敮漠⁦桴⁥敤摡楬獥⁴整牲牯獩⁴瑡慴正⁳癥牥爠捥牯敤⹤਍㠲ㄯ⼰〲㜱∬믊畏畭浡慵‬桴⁥楦獲⁴扯敳癲摥椠瑮牥瑳汥慬⁲扯敪瑣‬獩搠瑥捥整⹤ഢ《⼵ㄱ㈯㄰ⰷ畓桴牥慬摮匠牰湩獧挠畨捲⁨桳潯楴杮椠⁮敔慸⁳楫汬⁳㘲瀠潥汰⹥਍㔱ㄯ⼱〲㜱刬扯牥⁴畍慧敢椠⁳汰捡摥甠摮牥栠畯敳愠牲獥⁴畤楲杮愠洠汩瑩牡⁹潣灵椠⁮楚扭扡敷മ㈊⼱ㄱ㈯㄰ⰷ慒歴⁯汍摡쑩₇獩挠湯楶瑣摥漠⁦敧潮楣敤戠⁹桴⁥䍉奔映牯挠楲敭⁳畤楲杮琠敨䈠獯楮湡圠牡മ㈊⼲ㄱ㈯㄰ⰷ潒敢瑲䴠杵扡⁥敲楳湧⁳晡整⁲㜳礠慥獲椠⁮潰敷⹲਍㤰ㄯ⼲〲㜱䤬慲楱倠楲敭䴠湩獩整⁲敤汣牡獥䤠䥓⁌敤敦瑡摥椠⁮牉煡മㄊ⼴㈰㈯㄰ⰸ慐歲慬摮猠档潯⁬桳潯楴杮椠⁮汆牯摩⁡楫汬⁳㜱瀠潥汰⹥਍㐲〯⼳〲㠱䴬牡档映牯传牵䰠癩獥琠歡獥瀠慬散椠⁮癯牥㤠〰氠捯瑡潩獮朠潬慢汬⁹湩爠獥潰獮⁥潴琠敨倠牡汫湡⁤桳潯楴杮മ《⼴㐰㈯㄰ⰸ桔⁥〲㠱䄠浲湥慩⁮敒潶畬楴湯戠来湩⁳楷桴洠獡⁳牰瑯獥獴愠慧湩瑳倠楲敭䴠湩獩整⁲敓穲⁨慓杲祳湡മㄊ⼲㔰㈯㄰ⰸ倢歡瑡湡䠠牡灡湡挠慯楬楴湯眠湩⁳慍慬獹慩⁮敧敮慲⁬汥捥楴湯ⱳ攠摮湩⁧桴⁥ㄶ礭慥⁲畲敬漠⁦慂楲慳⁮慎楳湯污∮਍㈱〯⼶〲㠱䘬物瑳唠鎀潎瑲⁨潋敲⁡畳浭瑩栠汥⁤湩匠湩慧潰敲戠瑥敷湥䐠湯污⁤牔浵⁰湡⁤楋⁭潊杮甭⹮਍㐲〯⼶〲㠱匬畡楤䄠慲楢⁡污潬獷眠浯湥琠⁯牤癩⁥敬慧汬⁹潦⁲桴⁥楦獲⁴楴敭മㄊ⼴㜰㈯㄰ⰸ匢特慩挠敨業慣⁬瑡慴正椠⁮汁灥潰爠来潩⁮渨瑯㩥攠慸瑣搠瑡⁥潦⁲潄浵⁡瑡慴正眠獡䄠牰汩㜠‬桷捩⁨敬⁤潴唠ⵓ敬⁤瑳楲敫⁳湯䄠牰汩ㄠ⤴∮਍㘱〯⼷〲㠱听畲灭胢傓瑵湩䠠汥楳歮⁩畳浭瑩栠汥⁤湩䘠湩慬摮മㄊ⼸㠰㈯㄰ⰸ楆獲⁴潰瑳䤭䥓⁌汥捥楴湯栠汥⁤湩䤠慲⹱਍〳〯⼹〲㠱䴬捡摥湯慩爠晥牥湥畤⁭湯琠敨挠畯瑮祲猧爠湥浡湩⁧潴丠牯桴䴠捡摥湯慩മ《⼲〱㈯㄰ⰸ䨢浡污䬠慨桳杯楧椠⁳獡慳獳湩瑡摥椠獮摩⁥桴⁥慓摵⁩潣獮汵瑡⁥湩䤠瑳湡畢ⱬ吠牵敫⹹ഢ㈊⼸〱㈯㄰ⰸ〲㠱䈠慲楺楬湡朠湥牥污攠敬瑣潩㩮䨠楡⁲潂獬湯牡⁯獩攠敬瑣摥瀠敲楳敤瑮മㄊ⼷ㄱ㈯㄰ⰸ桔⁥教汬睯嘠獥獴⠠楇敬獴䨠畡敮⥳洠癯浥湥⁴敢楧獮椠⁮牆湡散眠瑩⁨慮楴湯楷敤瀠潲整瑳⹳਍㈲ㄯ⼲〲㠱∬畓摮⁡瑓慲瑩琠畳慮業椠⁮湉潤敮楳⁡楫汬⁳㈴‶湡⁤湩番敲⁳癯牥ㄠⰴ〰⸰ഢ《⼳㄰㈯㄰ⰹ桃湡❧⁥‴敢潣敭⁳桴⁥楦獲⁴灳捡捥慲瑦琠⁯慬摮漠⁮桴⁥慦⁲楳敤漠⁦桴⁥潍湯മ㈊⼵㄰㈯㄰ⰹ䘢牯慭⁬獥慴汢獩浨湥⁴景琠敨䈠湡獧浡牯⁯畁潴潮潭獵删来潩⁮湩䴠獵楬⁭楍摮湡潡‬桐汩灩楰敮⹳ഢㄊ⼵㌰㈯㄰ⰹ桃楲瑳档牵档洠獯畱⁥桳潯楴杮⁳湩丠睥娠慥慬摮欠汩⁬ㄵ瀠潥汰⹥਍㔱〯⼴〲㤱丬瑯敲䐭浡⁥慃桴摥慲⁬楦敲搠獥牴祯⁳瑩⁳灳物⁥湡⁤慬杲⁥慰瑲⁳景椠獴爠潯⹦਍ㄲ〯⼴〲㤱䔬獡整⁲畓摮祡戠浯楢杮⁳湩匠楲䰠湡慫欠汩⁬牡畯摮㈠〵瀠潥汰⁥捡潲獳挠畨捲敨⁳湡⁤潨整獬മ㌊⼰㐰㈯㄰ⰹ䔢灭牥牯䄠楫楨潴漠⁦慊慰⁮扡楤慣整ⱳ琠敨映物瑳椠⁮睴⁯散瑮牵敩⹳ഢ《⼱㔰㈯㄰ⰹ敒睩⁡牥⁡敢楧獮眠瑩⁨浅数潲⁲慎畲楨潴愠捳湥楤杮琠敨琠牨湯⹥਍ㄲ〯⼵〲㤱∬卉䱉氠獯獥椠獴氠獡⁴瑳潲杮潨摬‬湥楤杮椠獴琠牥楲潴楲污挠湯牴汯∮਍㤰〯⼶〲㤱䠬湯⁧潋杮瀠潲整瑳⁳敢楧⁮癯牥琠敨瀠潲潰敳⁤硥牴摡瑩潩⁮楢汬മ《⼶㜰㈯㄰ⰹ嘢捩潴⁲敖捳癯⁯敳獴愠渠睥栠浵湡搠灥桴爠捥牯Ɽ搠獥散摮湩⁧〱㤬㠲洠瑥牥⁳湩琠敨䌠慨汬湥敧⁲敄灥∮਍㔰〯⼸〲㤱∬湉楤⁡敲潶敫⁳牁楴汣⁥㜳ⰰ攠摮湩⁧慊浭⁵湡⁤態桳業馀⁳灳捥慩⁬瑳瑡獵∮਍㤱〯⼹〲㤱∬胢厜潴浲䄠敲⁡ㄵ胢₝癥湥⁴牤睡⁳ㅾ㔬〰瀠潥汰⁥潴丠癥摡㭡琠敨瘠物污樠歯⁥灳睡獮洠獵捩映獥楴慶獬戠瑵渠瑯愠戠獡⁥慲摩∮਍㤰ㄯ⼰〲㤱听牵敫⁹慬湵档獥愠⁮景敦獮癩⁥湩潴渠牯桴慥瑳牥⁮祓楲⁡慴杲瑥湩⁧畋摲獩⁨潦捲獥മㄊ⼸〱㈯㄰ⰹ䅎䅓愠瑳潲慮瑵⁳桃楲瑳湩⁡潋档愠摮䨠獥楳慣䴠楥⁲数晲牯⁭桴⁥楦獲⁴污⵬敦慭敬猠慰散慷歬漠瑵楳敤琠敨䤠卓മ㈊⼷〱㈯㄰ⰹ䄢畢䈠歡⁲污䈭条摨摡Ⱪ氠慥敤⁲景䤠䥓ⱌ搠敩⁳畤楲杮愠唠ⵓ敬⁤慲摩椠⁮慂楲桳ⱡ匠特慩∮਍㜱ㄯ⼱〲㤱∬佃䥖ⵄ㤱氠歩汥⁹敢楧獮猠牰慥楤杮椠⁮畗慨Ɱ䌠楨慮⠠慢正慤整⁤潴映物瑳猠獵数瑣摥挠獡⥥∮਍㠱ㄯ⼲〲㤱䐬湯污⁤牔浵⁰獩椠灭慥档摥戠⁹桴⁥单䠠畯敳漠⁦敒牰獥湥慴楴敶⁳潦⁲扡獵⁥景瀠睯牥愠摮漠獢牴捵楴湯漠⁦潃杮敲獳മ㈊⼰㈱㈯㄰ⰹ桔⁥湕瑩摥匠慴整⁳灓捡⁥潆捲⁥獩漠晦捩慩汬⁹獥慴汢獩敨⁤獡琠敨猠硩桴戠慲据⁨景琠敨唠⁓業楬慴祲മ《⼲㄰㈯㈰ⰰ潒慹⁬畁瑳慲楬湡䄠物䘠牯散愠摮丠癡⁹敤汰祯摥琠⁯獡楳瑳攠慶畣瑡潩獮搠牵湩⁧桴⁥湯潧湩⁧〲㤱胢㊓‰畁瑳慲楬湡戠獵晨物⁥敳獡湯മ《⼳㄰㈯㈰ⰰ牉湡慩⁮敇敮慲⁬慑敳⁭潓敬浩湡⁩獩欠汩敬⁤湩愠唠⁓牤湯⁥瑳楲敫愠⁴慂桧慤⁤湉整湲瑡潩慮⁬楁灲牯⹴਍㠰〯⼱〲〲∬歕慲湩⁥湉整湲瑡潩慮⁬楁汲湩獥䘠楬桧⁴㔷′獩猠潨⁴潤湷戠⁹桴⁥牉湡慩⁮剉䍇猠潨瑲祬愠瑦牥琠歡潥晦映潲⁭敔牨湡‬楫汬湩⁧污⁬㜱‶扡慯摲∮਍ㄳ〯⼱〲〲听敨唠楮整⁤楋杮潤⁭潦浲污祬眠瑩摨慲獷映潲⁭桴⁥畅潲数湡唠楮湯⠠牂硥瑩⸩਍㤰〯⼲〲〲∬潓瑵⁨潋敲湡映汩⁭慐慲楳整眠湩⁳畭瑬灩敬䄠慣敤祭䄠慷摲ⱳ琠敨映物瑳匠畯桴䬠牯慥⁮楦浬琠⁯敲散癩⁥畳档栠湯牯⹳ഢㄊ⼱㌰㈯㈰ⰰ䡗⁏敤汣牡獥䌠噏䑉ㄭ‹⁡慰摮浥捩മ㈊⼹㐰㈯㈰ⰰ⹕⹓愠湮畯据獥传数慲楴湯圠牡⁰灓敥⁤潴搠癥汥灯愠䌠噏䑉ㄭ‹慶捣湩⁥獡焠極正祬愠⁳潰獳扩敬മ㈊⼵㔰㈯㈰ⰰ桔⁥畭摲牥漠⁦敇牯敧䘠潬摹戠⁹楍湮慥潰楬⁳潰楬散琠楲杧牥⁳潷汲睤摩⁥牰瑯獥獴愠慧湩瑳瀠汯捩⁥牢瑵污瑩⁹湡⁤慲楣浳മ㌊⼰㔰㈯㈰ⰰ桔⁥湕瑩摥匠慴整⁳敲畳敭⁳牣睥摥猠慰散汦杩瑨眠瑩⁨桴⁥慬湵档漠⁦灓捡塥䌠敲⁷牄条湯⠠楦獲⁴楳据⁥〲ㄱ⸩਍㘱〯⼶〲〲∬潎瑲⁨潋敲⁡敤潭楬桳獥琠敨䤠瑮牥䬭牯慥⁮楌楡潳⁮晏楦散椠⁮態獥湯Ⱨ猠牴楡楮杮爠汥瑡潩獮∮਍〳〯⼶〲〲䌬楨慮胢玙丠瑡潩慮⁬敐灯敬胢玙䌠湯牧獥⁳牧湡獴椠獴汥⁦潰敷獲琠⁯畣瑲楡⁬楣楶⁬楬敢瑲敩⁳湩䠠湯⁧潋杮മ《⼹㜰㈯㈰ⰰ牐瑯獥獴猠慴瑲椠⁮畂杬牡慩愠慧湩瑳琠敨朠癯牥浮湥⁴景倠楲敭䴠湩獩整⁲潂歹⁯潂楲潳⹶਍〱〯⼷〲〲听牵楫桳倠敲楳敤瑮䔠摲쑯憟⁮牯敤獲琠敨䠠条慩匠灯楨⁡潴戠⁥潣癮牥整⁤慢正椠瑮⁯⁡潭煳敵മ㈊⼸㜰㈯㈰ⰰ潆浲牥䴠污祡楳湡倠⁍慎楪⁢慒慺⁫獩挠湯楶瑣摥漠⁮污⁬敳敶⁮档牡敧⁳敲慬整⁤潴琠敨ㄠ䑍⁂潣牲灵楴湯猠慣摮污മ㌊⼰㜰㈯㈰ⰰ䅎䅓氠畡据敨⁳桴⁥慍獲㈠㈰‰潲敶⁲業獳潩⁮倨牥敳敶慲据⥥琠⁯敳牡档映牯愠据敩瑮氠晩⁥湡⁤潣汬捥⁴慳灭敬⹳਍㐰〯⼸〲〲∬慍獳癩⁥浡潭楮浵渠瑩慲整攠灸潬楳湯椠⁮敂物瑵‬敌慢潮Ɱ欠汩獬愠⁴敬獡⁴ㄲ‸湡⁤湩番敲⁳桴畯慳摮⹳ഢㄊ⼹㠰㈯㈰ⰰ桔⁥灓捥慩⁬牔扩湵污映牯䰠扥湡湯挠湯楶瑣⁳慓楬⁭祁慹桳⠠效扺汯慬⥨椠⁮扡敳瑮慩映牯琠敨㈠〰‵獡慳獳湩瑡潩⁮景删晡捩䠠牡物⹩਍㔲〯⼸〲〲䄬牦捩⁡獩搠捥慬敲⁤牦敥漠⁦楷摬瀠汯潩മ㈊⼶㠰㈯㈰ⰰ敊晦䈠穥獯戠捥浯獥琠敨映物瑳瀠牥潳⁮楷桴愠渠瑥眠牯桴攠捸敥楤杮␠〲‰楢汬潩⹮਍㘱〯⼹〲〲唬⁎畈慭⁮楒桧獴䌠畯据汩愠捣獵獥琠敨嘠湥穥敵慬⁮潧敶湲敭瑮漠⁦牣浩獥愠慧湩瑳栠浵湡瑩⁹楳据⁥〲㐱മㄊ⼵〱㈯㈰ⰰ祋杲穹倠敲楳敤瑮匠潯潲扮祡䨠敥扮步癯爠獥杩獮愠業⁤慭獳癩⁥牰瑯獥獴愠瑦牥愠搠獩異整⁤慰汲慩敭瑮牡⁹汥捥楴湯മ㈊⼰〱㈯㈰ⰰ丢十馀⁳协剉卉刭硅猠慰散牣晡⁴潴捵敨⁳潤湷漠⁮獡整潲摩䈠湥畮琠⁯潣汬捥⁴慳灭敬ⱳ爠瑥牵楮杮椠⁮〲㌲∮਍㈲ㄯ⼰〲〲听敨䜠湥癥⁡潃獮湥畳⁳敄汣牡瑡潩⁮湯眠浯湥胢玙栠慥瑬⁨湡⁤慦業祬椠⁳楳湧摥戠⁹敲牰獥湥慴楴敶⁳牦浯㌠‴潣湵牴敩⹳਍㌲ㄯ⼰〲〲听敨䘠污汫湡⁤獉慬摮⁳牡⁥敤汣牡摥映敲⁥景氠湡⁤業敮⁳晡整⁲湡ㄠⴱ敹牡挠敬牡湡散攠晦牯⹴਍㤲ㄯ⼰〲〲䄬⁴敬獡⁴㐱‰業牧湡獴搠潲湷漠晦匠湥来污胢玙挠慯瑳攠⁮潲瑵⁥潴琠敨䌠湡牡⁹獉慬摮⹳਍㌰ㄯ⼱〲〲听敨㈠㈰‰单瀠敲楳敤瑮慩⁬汥捥楴湯猠敥⁳敲潣摲琠牵潮瑵※潊⁥楂敤⁮楷獮戠瑵吠畲灭挠湯整瑳⁳敲畳瑬⹳਍㌰ㄯ⼱〲〲听敨吠杩慲⁹慗⁲敢楧獮椠⁮瑅楨灯慩മㄊ⼵ㄱ㈯㈰ⰰ吢敨删来潩慮⁬潃灭敲敨獮癩⁥捅湯浯捩倠牡湴牥桳灩⠠䍒偅 獩猠杩敮⁤祢ㄠ‵獁慩倭捡晩捩挠畯瑮楲獥‬潦浲湩⁧桴⁥潷汲馀⁳慬杲獥⁴牦敥琭慲敤戠潬⹣ഢㄊ⼹ㄱ㈯㈰ⰰ桔⁥牂牥瑥湯删灥牯⁴湯䄠獵牴污慩⁮慷⁲牣浩獥椠⁮晁桧湡獩慴⁮獩爠汥慥敳⹤਍㜲ㄯ⼱〲〲䤬慲馀⁳潴⁰畮汣慥⁲捳敩瑮獩⁴潍獨湥䘠歡牨穩摡桥椠⁳獡慳獳湩瑡摥渠慥⁲敔牨湡മ㌊⼰ㄱ㈯㈰ⰰ䄢⁉牢慥瑫牨畯桧›汁桰䙡汯⁤潳癬獥瀠潲整湩映汯楤杮‬⁡慭潪⁲楢汯杯捩污瀠潲汢浥∮਍㄰ㄯ⼲〲〲听敨椠潣楮⁣牁捥扩⁯扏敳癲瑡牯馀⁳整敬捳灯⁥潣汬灡敳⁳湩倠敵瑲⁯楒潣മ《⼲㈱㈯㈰ⰰ乕瘠瑯獥琠⁯敲潭敶挠湡慮楢⁳牦浯琠敨氠獩⁴景搠湡敧潲獵搠畲獧椠⁮敲潣湧瑩潩⁮景洠摥捩污甠敳മ《⼸㈱㈯㈰ⰰ丢灥污愠摮䌠楨慮愠牧敥漠⁮桴⁥景楦楣污栠楥桧⁴景䴠畯瑮䔠敶敲瑳›ⰸ㐸⸸㘸洠瑥牥⹳ഢㄊ⼸㈱㈯㈰ⰰ䄢瑳潲潮敭獲搠瑥捥⁴䱂ㅃ‬⁡慲楤⁯楳湧污瀠瑯湥楴污祬映潲⁭牐硯浩⁡敃瑮畡楲∮਍ㄲㄯ⼲〲〲∬片慥⁴潣橮湵瑣潩⁮景䨠灵瑩牥愠摮匠瑡牵⁮捯畣獲‬桴⁥汣獯獥⁴楳据⁥㘱㌲∮਍㄰〯⼱〲ㄲ䄬牦捩湡䌠湯楴敮瑮污䘠敲⁥牔摡⁥牁慥漠晦捩慩汬⁹潣敭⁳湩潴攠晦捥⹴਍㘰〯⼱〲ㄲ∬畓灰牯整獲漠⁦牐獥摩湥⁴牔浵⁰瑳牯⁭桴⁥单䌠灡瑩汯‬慣獵湩⁧楦敶搠慥桴⹳ഢㄊ⼰㄰㈯㈰ⰱ䬢浩䨠湯ⵧ湵戠捥浯獥䜠湥牥污匠捥敲慴祲漠⁦桴⁥潗歲牥❳倠牡祴漠⁦潋敲ⱡ椠桮牥瑩湩⁧⁡楴汴⁥楬歮摥琠⁯楨⁳慦桴牥∮਍㌱〯⼱〲ㄲ∬楆獲⁴潤扵敬愠浲愠摮猠潨汵敤⁲牴湡灳慬瑮瀠牥潦浲摥椠⁮祌湯‬牆湡散∮਍㌱〯⼱〲ㄲ∬牔浵⁰浩数捡敨⁤潦⁲桴⁥敳潣摮琠浩ⱥ愠煣極瑴摥戠⁹敓慮整愠慧湩⠠牴慩⁬敆⁢鎀㌱⸩ഢ㈊⼰㄰㈯㈰ⰱ䨢敯䈠摩湥椠慮杵牵瑡摥愠⁳单倠敲楳敤瑮※態慭慬䠠牡楲⁳敢潣敭⁳楦獲⁴潷慭Ɱ䄠牦捩湡䄠敭楲慣Ɱ愠摮䄠楳湡䄠敭楲慣⁮楖散倠敲楳敤瑮∮਍㈲〯⼱〲ㄲ听敲瑡⁹湯琠敨倠潲楨楢楴湯漠⁦畎汣慥⁲敗灡湯⁳潣敭⁳湩潴攠晦捥⹴਍㌱〯⼲〲ㄲ∬楗瑮牥匠潴浲唠楲栠瑩⁳潎瑲⁨流牥捩ⱡ挠獯楴杮␠〲‰楢汬潩⁮湡⁤㌲‷楬敶ⱳ琠楲杧牥湩⁧敔慸⁳潰敷⁲牣獩獩∮਍㠱〯⼲〲ㄲ丬十馀⁳慍獲㈠㈰‰業獳潩⁮倨牥敳敶慲据⁥潲敶⁲‫湉敧畮瑩⁹敨楬潣瑰牥 慬摮⁳畳捣獥晳汵祬愠⁴敊敺潲䌠慲整⹲਍㈲〯⼲〲ㄲ∬瑉污慩⁮浡慢獳摡牯䰠捵⁡瑁慴慮楳⁯畭摲牥摥渠慥⁲潇慭‬剄䌠湯潧∮਍㘰〯⼳〲ㄲ∬潐数䘠慲据獩洠敥獴䜠慲摮䄠慹潴汬桡䄠楬愠⵬楓瑳湡⁩湩䤠慲ⱱ映物瑳攭敶⁲潰数愭慹潴汬桡洠敥楴杮∮਍㠱〯⼳〲ㄲ匬慰湩瀠獡敳⁳略桴湡獡慩氠睡മ㈊⼰㌰㈯㈰ⰱ畔歲祥愠湮畯据獥眠瑩摨慲慷⁬牦浯䤠瑳湡畢⁬潃癮湥楴湯മ㈊⼱㌰㈯㈰ⰱ䌢慬桳獥椠⁮灁牵ⱥ嘠湥穥敵慬‬敢睴敥⁮潃潬扭慩⁮䅆䍒搠獩楳敤瑮⁳湡⁤敖敮畺汥湡映牯散⁳慣獵⁥慣畳污楴獥愠摮搠獩汰捡浥湥⹴ഢ㈊⼹㌰㈯㈰ⰱ吢敨挠湯慴湩牥猠楨⁰癅牥䜠癩湥戠潬正⁳桴⁥畓穥䌠湡污映牯猠硩搠祡ⱳ搠獩畲瑰湩⁧汧扯污琠慲敤∮਍㤰〯⼴〲ㄲ∬敄瑡⁨景倠楲据⁥桐汩灩‬畄敫漠⁦摅湩畢杲⹨ഢㄊ⼱㐰㈯㈰ⰱ楈敤楫䴠瑡畳慹慭戠捥浯獥映物瑳䨠灡湡獥⁥慭⁮潴眠湩愠洠橡牯朠汯⁦档浡楰湯桳灩⠠慍瑳牥⥳മㄊ⼳㐰㈯㈰ⰱ慊慰⁮灡牰癯獥瀠慬⁮潴搠浵⁰畆畫桳浩⁡慲楤慯瑣癩⁥慷整⁲湩潴琠敨倠捡晩捩传散湡漠敶⁲〳礠慥獲മㄊ⼵㐰㈯㈰ⰱ匢楣湥楴瑳⁳牣慥整洠湯敫⁹浥牢潹⁳楷桴椠橮捥整⁤畨慭⁮瑳浥挠汥獬‬潦浲湩⁧档浩牥ⵡ浥牢潹⹳ഢ㈊⼰㐰㈯㈰ⰱ桃摡胢玙倠敲楳敤瑮䤠牤獩⁳썄抩⁹楫汬摥椠⁮汣獡敨⁳楷桴爠扥汥⁳晡整⁲〳礠慥獲椠⁮潰敷⹲਍㐲〯⼴〲ㄲ∬湉潤敮楳湡猠扵慭楲敮䬠䥒丠湡杧污⁡楳歮ⱳ㔠″牣睥氠獯⹴ഢ㈊⼸㐰㈯㈰ⰱ潂摲牥挠慬桳戠瑥敷湥䬠特祧獺慴⁮湡⁤慔楪楫瑳湡欠汩獬㔠⸵਍㘰〯⼵〲ㄲ䌬湯汦捩⁴湡⁤楶汯湥散猠牵敧愠瑦牥䤠牳敡⁬癥捩獴倠污獥楴楮湡映浡汩敩⁳牦浯䔠獡⁴敊畲慳敬⹭਍㌲〯⼵〲ㄲ刬慹慮物䘠楬桧⁴㤴㠷映牯散⁤潴氠湡⁤湩䈠汥牡獵琠⁯敤慴湩樠畯湲污獩⁴潒慭⁮牐瑯獡癥捩⹨਍㜰〯⼶〲ㄲ∬䅎䅓胢玙䨠湵⁯灳捡捥慲瑦映祬祢漠⁦畊楰整馀⁳潭湯䜠湡浹摥ⱥ映物瑳椠⁮〲‫敹牡⹳ഢㄊ⼳㘰㈯㈰ⰱ敂橮浡湩丠瑥湡慹畨漠獵整⁤獡䤠牳敡馀⁳䵐※慎瑦污⁩敂湮瑥⁴湡⁤慙物䰠灡摩愠獳浵⁥敬摡牥桳灩爠汯獥മㄊ⼹㘰㈯㈰ⰱ畊敮整湥桴搠捥慬敲⁤⁡单映摥牥污栠汯摩祡മ㈊⼴㘰㈯㈰ⰱ䌢慨灭慬湩吠睯牥⁳潓瑵⁨潣摮浯湩畩⁭潣汬灡敳椠⁮畓晲楳敤‬汆牯摩⁡楫汬⁳㠹∮਍㐰〯⼷〲ㄲ∬桐汩灩楰敮䄠物䘠牯散䌠ㄭ〳挠慲桳椠⁮潊潬‬畓畬欠汩獬㔠⸰ഢ《⼷㜰㈯㈰ⰱ慈瑩慩⁮牐獥摩湥⁴潊敶敮⁬潍꿃敳愠獳獡楳慮整⹤਍㠱〯⼷〲ㄲ∬湉敶瑳杩瑡潩⁮敲敶污⁳华⁏片畯⁰灳睹牡⁥獵摥朠潬慢汬⁹潴琠牡敧⁴敬摡牥ⱳ愠瑣癩獩獴‬潪牵慮楬瑳⹳ഢㄊ⼹㜰㈯㈰ⰱ䈢畬⁥牏杩湩胢玙丠睥匠敨慰摲挠湯畤瑣⁳楦獲⁴畨慭⁮整瑳映楬桧ⱴ椠据畬楤杮䨠晥⁦敂潺⹳ഢ㈊⼸㜰㈯㈰ⰱ楆獲⁴楤敲瑣漠獢牥慶楴湯漠⁦楬桧⁴敢楨摮愠戠慬正栠汯⁥潣普物獭䔠湩瑳楥馀⁳敧敮慲⁬敲慬楴楶祴മ《⼹㠰㈯㈰ⰱ䤢䍐⁃敲敬獡獥匠硩桴䄠獳獥浳湥⁴敒潰瑲‬慷湲⁳汣浩瑡⁥档湡敧椠⁳楷敤灳敲摡愠摮椠瑮湥楳祦湩⹧ഢㄊ⼴㠰㈯㈰ⰱ䔢牡桴畱歡⁥楫汬⁳癯牥㈠〬〰椠⁮慈瑩⹩ഢㄊ⼵㠰㈯㈰ⰱ吢污扩湡琠歡⁥態畢ⱬ攠摮湩⁧〲礭慥⁲晁桧湡眠牡映汯潬楷杮唠⁓湡⁤潣污瑩潩⁮楷桴牤睡污∮਍〳〯⼸〲ㄲ唬⁎湡潮湵散⁳汧扯污瀠慨敳漭瑵漠⁦敬摡摥瀠瑥潲⁬湩爠慯⁤敶楨汣獥മ《⼷㤰㈯㈰ⰱ汅匠污慶潤⁲敢潣敭⁳楦獲⁴潣湵牴⁹潴愠潤瑰䈠瑩潣湩愠⁳敬慧⁬整摮牥മㄊ⼴㤰㈯㈰ⰱ潎瑲⁨潋敲⁡慬湵档獥猠潨瑲爭湡敧戠污楬瑳捩洠獩楳敬㭳匠畯桴䬠牯慥琠獥獴猠扵慭楲敮氭畡据敨⁤慢汬獩楴⁣業獳汩⹥਍㔱〯⼹〲ㄲ∬畁瑳慲楬ⱡ唠ⱋ唠⁓潦浲琠楲慬整慲⁬敳畣楲祴瀠捡⁴䄨䭕单Ⱙ椠据畬楤杮渠捵敬牡瀭睯牥摥猠扵慭楲敮⁳潦⁲畁瑳慲楬⹡ഢㄊ⼶㤰㈯㈰ⰱ匢慰散馀⁳湉灳物瑡潩㑮挠浯汰瑥獥映物瑳愠汬挭癩汩慩⁮灳捡晥楬桧ⱴ漠扲瑩湩⁧慅瑲⁨潦⁲桴敲⁥慤獹∮਍㌰ㄯ⼰〲ㄲ倬湡潤慲倠灡牥⁳敬歡攠灸獯獥漠晦桳牯⁥楦慮据獥漠⁦潷汲⁤敬摡牥⹳਍㘰ㄯ⼰〲ㄲ圬佈攠摮牯敳⁳楦獲⁴慭慬楲⁡慶捣湩⹥਍㘱ㄯ⼱〲ㄲ刬獵楳⁡潣摮浥敮⁤潦⁲湡楴猭瑡汥楬整眠慥潰⁮整瑳挠敲瑡湩⁧灳捡⁥敤牢獩മ㌊⼰ㄱ㈯㈰ⰱ䈢牡慢潤⁳敢潣敭⁳⁡敲異汢捩‬湥楤杮挠湯瑳瑩瑵潩慮⁬潭慮捲票戠瑵爠浥楡獮椠⁮桴⁥潃浭湯敷污桴∮਍㤰ㄯ⼲〲ㄲ∬牔捵⁫牣獡⁨湩䌠楨灡獡‬敍楸潣欠汩獬㔠‵業牧湡獴攠⁮潲瑵⁥潴琠敨唠⹓ഢㄊ⼶㈱㈯㈰ⰱ吢灹潨湯删楡栠瑩⁳桐汩灩楰敮ⱳ欠汩楬杮㐠㤰∮਍㈰〯⼱〲㈲唬牮獥⁴牥灵獴椠⁮態慺桫瑳湡മ《⼴㄰㈯㈰ⰲ吢敨映癩⁥数浲湡湥⁴乕匠捥牵瑩⁹潃湵楣⁬敭扭牥⁳䌨楨慮‬牆湡散‬畒獳慩‬䭕‬单 潪湩汴⁹敤汣牡⁥桴瑡渠捵敬牡眠牡鲀慣湮瑯戠⁥潷⁮湡⁤畭瑳渠癥牥戠⁥潦杵瑨鶀ഢㄊ⼵㄰㈯㈰ⰲ桔⁥畈杮⁡潔杮鎀畈杮⁡慈믊灡楡瘠汯慣楮⁣牥灵楴湯愠摮琠畳慮業漠捣牵㭳漠敮漠⁦桴⁥慬杲獥⁴潶捬湡捩攠灸潬楳湯⁳敲潣摲摥椠⁮敤慣敤⹳਍㐰〯⼲〲㈲∬敂橩湩⁧潨瑳⁳桴⁥楗瑮牥传祬灭捩ⱳ戠捥浯湩⁧桴⁥楦獲⁴楣祴琠⁯潨瑳戠瑯⁨畓浭牥愠摮圠湩整⁲慇敭⹳ഢ㈊⼴㈰㈯㈰ⰲ刢獵楳⁡慬湵档獥愠映汵⵬捳污⁥湩慶楳湯漠⁦歕慲湩ⱥ攠捳污瑡湩⁧桴⁥畒獳ⵯ歕慲湩慩⁮慗Ⱳ琠楲杧牥湩⁧⁡慭潪⁲敲畦敧⁥牣獩獩愠摮琠潨獵湡獤漠⁦敤瑡獨∮਍㔱〯⼳〲㈲䰬牡敧猭慣敬瀠潲整瑳⁳慴敫瀠慬散椠⁮牓⁩慌歮⹡਍〲〯⼳〲㈲∬畈扢敬匠慰散吠汥獥潣数椠慭敧⁳慅敲摮汥‬桴⁥慥汲敩瑳愠摮洠獯⁴楤瑳湡⁴湫睯⁮瑳牡∮਍㐱〯⼴〲㈲䔬潬⁮畍歳瀠牵档獡獥吠楷瑴牥മㄊ⼹㐰㈯㈰ⰲ䐢慥桴漠⁦態敮吠湡歡ⱡ琠敨眠牯摬胢玙猠捥湯⁤汯敤瑳瘠牥晩敩⁤数獲湯‬条摥ㄠ㤱∮਍㘰〯⼵〲㈲伬瑵牢慥⁫景洠湯敫灹硯漠捣牵⹳਍㈱〯⼵〲㈲∬桔⁥癅湥⁴潈楲潺⁮敔敬捳灯⁥慣瑰牵獥琠敨映物瑳椠慭敧漠⁦慓楧瑴牡畩⁳⩁‬桴⁥畳数浲獡楳敶戠慬正栠汯⁥瑡琠敨䴠汩祫圠祡胢玙挠湥整⹲ഢㄊ⼲㘰㈯㈰ⰲ畅潲数攠灸牥敩据獥搠慥汤⁹敨瑡眠癡獥欠汩楬杮琠湥⁳景琠潨獵湡獤മ㈊⼲㘰㈯㈰ⰲ慅瑲煨慵敫猠牴歩獥䄠杦慨楮瑳湡മ㌊⼰㘰㈯㈰ⰲ敋慴橮⁩牂睯⁮慊正潳⁮睳牯⁮湩愠⁳桴⁥楦獲⁴求捡⁫潷慭⁮畓牰浥⁥潃牵⁴番瑳捩⁥湩琠敨唠⹓਍㠰〯⼷〲㈲䘬牯敭⁲慊慰敮敳倠楲敭䴠湩獩整⁲桓湩潺䄠敢愠獳獡楳慮整⹤਍ㄱ〯⼷〲㈲∬慊敭⁳敗扢匠慰散吠汥獥潣数琠歡獥椠獴映物瑳搠敥⁰楦汥⁤浩条ⱥ琠敨漠摬獥⁴湡⁤楨桧獥⁴敲潳畬楴湯椠慭敧漠⁦桴⁥湵癩牥敳礠瑥∮਍㈲〯⼷〲㈲䌬楨敮敳瀠摡汤晥獩⁨景楦楣污祬搠捥慬敲⁤硥楴据⹴਍㐰〯⼸〲㈲䌬楨慮挠湯畤瑣⁳瑩⁳慬杲獥⁴業楬慴祲攠數捲獩⁥敮牡吠楡慷⁮晡整⁲慎据⁹敐潬楳胢玙挠湯牴癯牥楳污瘠獩瑩മ㈊⼴㠰㈯㈰ⰲ鲀慍⁮景琠敨䠠汯ⱥ胢₝慬瑳欠潮湷洠浥敢⁲景愠䈠慲楺楬湡椠摮杩湥畯⁳牧畯Ɒ搠敩⹳ഢ㈊⼸㠰㈯㈰ⰲ敄慶瑳瑡湩⁧汦潯獤椠⁮慐楫瑳湡琠楲杧牥愠猠癥牥⁥捥湯浯捩挠楲楳⹳਍ㄳ〯⼸〲㈲唬⁎畈慭⁮楒桧獴传晦捩⁥敲敬獡獥爠灥牯⁴湯堠湩楪湡⹧਍ㄳ〯⼸〲㈲∬敄瑡⁨景䴠歩慨汩䜠牯慢档癥‬慬瑳匠癯敩⁴敬摡牥‬条摥㤠⸱ഢ《⼸㤰㈯㈰ⰲ畑敥⁮汅穩扡瑥⁨䥉搠敩⁳瑡愠敧㤠㬶䌠慨汲獥䤠䥉猠捵散摥⁳敨⹲਍㘱〯⼹〲㈲䴬桡慳䄠業楮瀠潲整瑳⁳牥灵⁴湩䤠慲⹮਍㔲〯⼹〲㈲䔬楬摵䬠灩档杯⁥敳獴愠渠睥洠牡瑡潨⁮潷汲⁤敲潣摲椠⁮敂汲湩മ㈊⼶㤰㈯㈰ⰲ䅎䅓胢玙䐠畯汢⁥獁整潲摩删摥物捥楴湯吠獥⁴䐨剁⥔搠浥湯瑳慲整⁳獡整潲摩搠晥敬瑣潩⁮慣慰楢楬楴獥മ㈊⼷㤰㈯㈰ⰲ䠢牵楲慣敮䤠湡搠癥獡慴整⁳畃慢愠摮琠敨唠ⱓ挠畡楳杮愠⁴敬獡⁴㔱‷敤瑡獨愠摮眠摩獥牰慥⁤潰敷⁲畯慴敧⹳ഢ《⼱〱㈯㈰ⰲ畈慭⁮牣獵⁨瑡䬠湡番畲慨⁮瑓摡畩⁭湩䤠摮湯獥慩欠汩獬ㄠㄳ愠摮椠橮牵獥㔠〰⸫਍㘰ㄯ⼰〲㈲∬⁁慭獳愠瑴捡⁫湩丠湯⁧畂⁡慌灭畨‬桔楡慬摮欠汩獬㌠⸶ഢ《⼲ㄱ㈯㈰ⰲ敐捡⁥条敲浥湥⁴楳湧摥戠瑥敷湥䔠桴潩楰⁡湡⁤楔牧祡映捡楴湯⹳਍ㄱㄯ⼱〲㈲䌬祲瑰捯牵敲据⁹硥档湡敧䘠塔映汩獥映牯䌠慨瑰牥ㄠ‱慢歮畲瑰祣മㄊ⼵ㄱ㈯㈰ⰲ潗汲⁤潰異慬楴湯漠晦捩慩汬⁹獥楴慭整⁤潴栠癡⁥敲捡敨⁤‸楢汬潩⹮਍㘱ㄯ⼱〲㈲∬䅎䅓氠畡据敨⁳牁整業⁳ⰱ映物瑳甠据敲敷⁤汦杩瑨漠⁦桴⁥敮⁷灓捡⁥慌湵档匠獹整⁭潲正瑥∮਍㘲ㄯ⼱〲㈲倬潲整瑳⁳牥灵⁴湩䌠楨慮漠敶⁲佃䥖ⵄ㤱爠獥牴捩楴湯⹳਍〳ㄯ⼱〲㈲伬数䅮⁉慬湵档獥䌠慨䝴呐䄠⁉档瑡潢⹴਍㜰ㄯ⼲〲㈲∬敐畲映捡獥瀠潲整瑳⁳潦汬睯湩⁧敳晬挭畯⁰瑡整灭ⱴ椠灭慥档敭瑮‬湡⁤牡敲瑳漠⁦牐獥摩湥⁴敐牤⁯慃瑳汩潬∮਍㤰ㄯ⼲〲㈲䌬牯畲瑰潩⁮捳湡慤⁬湩潶癬湩⁧慑慴⁲敲敶污摥愠⁴桴⁥畅潲数湡倠牡楬浡湥⹴਍㄰〯⼱〲㌲䌬潲瑡慩愠潤瑰⁳桴⁥畅潲愠摮樠楯獮琠敨匠档湥敧⁮牁慥മ《⼸㄰㈯㈰ⰳ瑁慴正漠⁮桴⁥牂穡汩慩⁮潃杮敲獳മㄊ⼹㄰㈯㈰ⰳ牆湡散攠灸牥敩据獥洠橡牯瀠湥楳湯爠晥牯⁭瑳楲敫⹳਍㘰〯⼲〲㌲∬敄慶瑳瑡湩⁧畔歲祥匭特慩攠牡桴畱歡獥欠汩⁬敮牡祬㘠ⰰ〰‰数灯敬∮਍ㄲ〯⼲〲㌲∬祃汣湯⁥牆摥祤欠汩獬愠潲湵⁤ⰱ〴‰湩䴠污睡⁩湡⁤潍慺扭煩敵∮਍〱〯⼳〲㌲䤬慲⁮湡⁤慓摵⁩牁扡慩爠獥潴敲搠灩潬慭楴⁣敲慬楴湯⹳਍㐰〯⼴〲㌲䘬湩慬摮漠晦捩慩汬⁹潪湩⁳䅎佔മㄊ⼳㐰㈯㈰ⰳ䡗⁏灡牰癯獥琠敨删ㄲ䴯瑡楲⵸⁍慭慬楲⁡慶捣湩⹥਍㔱〯⼴〲㌲听楨摲匠摵湡獥⁥楣楶⁬慷⁲敢楧獮മ㈊⼰㐰㈯㈰ⰳ灓捡塥挠湯畤瑣⁳桴⁥楦獲⁴畦汬猠慴正琠獥⁴慬湵档漠⁦瑩⁳瑓牡桳灩爠捯敫⹴਍㔰〯⼵〲㌲圬佈攠摮⁳桴⁥佃䥖ⵄ㤱瀠扵楬⁣敨污桴攠敭杲湥祣搠獥杩慮楴湯മ《⼶㔰㈯㈰ⰳ楋杮䌠慨汲獥䤠䥉挠潲湷摥愠⁳潭慮捲⁨景琠敨唠⁋湡⁤潃浭湯敷污桴മㄊ⼷㔰㈯㈰ⰳ捅慵潤⁲慦散⁳⁡潰楬楴慣⁬牣獩獩മ《⼲㘰㈯㈰ⰳ摏獩慨琠慲湩挠汯楬楳湯椠⁮湉楤⹡਍㈱〯⼶〲㌲䬬慷慲戠慯⁴楤慳瑳牥മ㈊⼳㘰㈯㈰ⰳ慗湧牥䜠潲灵爠扥汥楬湯愠慧湩瑳琠敨删獵楳湡朠癯牥浮湥⁴捯畣獲മㄊ⼴㜰㈯㈰ⰳ䅓ⵇ䙁剔⁁捡潴獲胢ₙ瑳楲敫戠来湩⁳湩琠敨唠⹓਍㘲〯⼷〲㌲䌬畯⁰馀꧃慴⁴湩丠杩牥മ㈊⼳㠰㈯㈰ⰳ湉楤馀⁳桃湡牤祡慡⁮″慬摮⁳湯琠敨氠湵牡猠畯桴瀠汯⹥਍〳〯⼸〲㌲䌬畯⁰馀꧃慴⁴湩䜠扡湯മ《⼸㤰㈯㈰ⰳ䴢牡慲敫桳匭晡⁩慥瑲煨慵敫欠汩獬渠慥汲⁹ⰶ〰‰数灯敬∮਍〱〯⼹〲㌲∬瑓牯⁭慄楮汥戠捥浯獥搠慥汤敩瑳䴠摥瑩牥慲敮湡猠潴浲眠瑩⁨ⰴ〰⬰搠慥桴⁳湩䰠扩慹∮਍㤱〯⼹〲㌲䄬敺扲楡慪楮漠晦湥楳敶椠⁮慎潧湲ⵯ態慲慢桫മ《⼳〱㈯㈰ⰳ敋楶⁮捍慃瑲票攠灸汥敬⁤獡匠数歡牥漠⁦桴⁥单䠠畯敳漠⁦敒牰獥湥慴楴敶⁳胢ₔ桴⁥楦獲⁴楴敭椠⁮单栠獩潴祲മ㈊⼳〱㈯㈰ⰳ畇祡湡⁡獅煥極慢琠牥楲潴楲污挠楲楳⁳湩整獮晩敩⹳਍㜲ㄯ⼰〲㌲伬数慲楴湯ㄠ㈰‷敢楧獮钀挠潯摲湩瑡摥愠獳畡瑬戠⁹湡楴樭湵慴映牯散⁳湩䴠慹浮牡胢玙挠癩汩眠牡മ㈊⼴ㄱ㈯㈰ⰳ潓慭楬⁡潪湩⁳桴⁥慅瑳䄠牦捩湡䌠浯畭楮祴മㄊ⼲㈱㈯㈰ⰳ佃㉐‸潣据畬敤⁳楷桴瀠敬杤獥琠⁯牴湡楳楴湯愠慷⁹牦浯映獯楳⁬畦汥⹳਍㠱ㄯ⼲〲㌲䌬瑡潨楬⁣桃牵档爠汥慥敳⁳楆畤楣⁡畳灰楬慣獮മ㌊⼱㈱㈯㈰ⰳ儢敵湥䴠牡牧瑥敨䤠⁉景䐠湥慭歲愠湮畯据獥愠摢捩瑡潩⁮晥敦瑣癩⁥慊畮牡⁹㐱‬湥楤杮㔠′敹牡⁳湯琠牨湯⹥ഢ《⼱㄰㈯㈰ⰴ楄捳癯牥⁹景唠慰潮嘠污敬⁹楳整⁳異汢獩敨൤ㄊ⼶㄰㈯㈰ⰴ牉湡倭歡獩慴⁮潢摲牥猠楫浲獩敨൳ㄊ⼹㄰㈯㈰ⰴ䨢塁❁⁳楦獲⁴畬慮⁲牰扯ⱥ匠䥌ⱍ氠湡獤漠⁮桴⁥潍湯ഢ㌊⼰㄰㈯㈰ⰴ䘢牯敭⁲牐浩⁥楍楮瑳牥漠⁦慐楫瑳湡䤠牭湡䬠慨⁮獩挠湯牴癯牥楳污祬猠湥整据摥琠⁯牰獩湯映牯挠牯畲瑰潩Ɱ氠慥楫杮猠慴整猠捥敲獴‬湡⁤汩敬慧⁬慭牲慩敧ഢ《⼱㈰㈯㈰ⰴ桃汩⁥楷摬楦敲൳㈊⼲㈰㈯㈰ⰴ䤢瑮極楴敶䴠捡楨敮⁳慬摮⁳楦獲⁴牰癩瑡⁥畬慮⁲牰扯ⱥ丠癯ⵡⱃ漠⁮桴⁥潍湯ഢ《⼷㌰㈯㈰ⰴ睓摥湥樠楯獮丠呁൏㈊⼲㌰㈯㈰ⰴ牃捯獵䌠瑩⁹慈汬愠瑴捡൫《⼱㐰㈯㈰ⰴ獉慲汥⁩楡獲牴歩⁥湯琠敨䤠慲楮湡挠湯畳慬整椠⁮慄慭捳獵਍㔰〯⼴〲㐲刬楡⁤湯琠敨䴠硥捩湡攠扭獡祳椠⁮捅慵潤൲ㄊ⼵㔰㈯㈰ⰴ瑁整灭整⁤獡慳獳湩瑡潩⁮景删扯牥⁴楆潣਍㤱〯⼵〲㐲嘬牡慺慱⁮敨楬潣瑰牥挠慲桳਍㐲〯⼵〲㐲䔬杮⁡慬摮汳摩൥㈊⼹㔰㈯㈰ⰴ晁楲慣⁮慎楴湯污䌠湯牧獥⁳潬敳⁳慰汲慩敭瑮牡⁹慭潪楲祴映牯映物瑳琠浩⁥楳据⁥湥⁤景䄠慰瑲敨摩椠⁮潓瑵⁨晁楲慣⁮敧敮慲⁬汥捥楴湯਍㄰〯⼶〲㐲䘬敲据⁨潰楬楴慣⁬牣獩獩਍㠱〯⼶〲㐲匬浡ⵥ敳⁸慭牲慩敧氠来污穩摥椠⁮桔楡慬摮਍㌲〯⼶〲㐲䐬条獥慴⁮瑡慴正൳㈊⼴㘰㈯㈰ⰴ䨢汵慩⁮獁慳杮⁥敲敬獡摥映潲⁭牰獩湯椠⁮䭕愠瑦牥愠捣灥楴杮唠⁓汰慥戠牡慧湩‬敲畴湲⁳潴䄠獵牴污慩ഢ㈊⼶㘰㈯㈰ⰴ潂楬楶湡挠畯⁰瑡整灭൴《⼱㜰㈯㈰ⰴ瑓摵湥⵴敐灯敬猧甠牰獩湩൧《⼴㜰㈯㈰ⰴ慌潢牵眠湩⁳湕瑩摥䬠湩摧浯朠湥牥污攠敬瑣潩൮ㄊ⼳㜰㈯㈰ⰴ瑁整灭整⁤獡慳獳湩瑡潩⁮景䐠湯污⁤牔浵⁰湩倠湥獮汹慶楮ൡㄊ⼹㜰㈯㈰ⰴ䍉⁊楦摮⁳獉慲汥⁩捯畣慰楴湯漠⁦慐敬瑳湩慩⁮整牲瑩牯敩⁳⁡楶汯瑡潩⁮景椠瑮牥慮楴湯污氠睡਍〳〯⼷〲㐲唬楮整⁤楋杮潤⁭楲瑯൳㌊⼱㜰㈯㈰ⰴ獁慳獳湩瑡潩⁮景䤠浳楡⁬慈楮敹൨ㄊ⼹㠰㈯㈰ⰴ敍楸慣⁮番楤楣污爠晥牯⁭牰瑯獥獴਍㜱〯⼹〲㐲䰬扥湡湯攠敬瑣潲楮⁣敤楶散愠瑴捡獫਍㄰ㄯ⼰〲㐲䤬牳敡楬椠癮獡潩⁮景䰠扥湡湯਍㌱ㄯ⼰〲㐲刬瑵⁨桃灥杮胢料楴档戠敲歡⁳潷敭馀⁳慭慲桴湯眠牯摬爠捥牯⁤瑡䌠楨慣潧਍㘱ㄯ⼰〲㐲䬬汩楬杮漠⁦慙票⁡楓睮牡਍㜲ㄯ⼰〲㐲匬楨敧畲䤠桳扩⁡敢潣敭⁳牐浩⁥楍楮瑳牥漠⁦慊慰⁮獡朠湥牥污攠敬瑣潩⁮敲畳瑬⁳湩栠獩潴楲⁣畨杮瀠牡楬浡湥൴《⼵ㄱ㈯㈰ⰴ潄慮摬吠畲灭眠湩⁳单瀠敲楳敤瑮慩⁬汥捥楴湯਍ㄱㄯ⼱〲㐲娬畨慨⁩慣⁲瑡慴正਍〲ㄯ⼱〲㐲䨬獵楴⁮敗扬⁹敲楳湧⁳獡䄠捲扨獩潨⁰景䌠湡整扲牵⁹浡摩瑳愠畢敳猠慣摮污਍ㄲㄯ⼱〲㐲䤬瑮牥慮楴湯污䌠楲業慮⁬潃牵⁴牡敲瑳眠牡慲瑮⁳潦⁲獉慲汥⁩敬摡牥൳《⼳㈱㈯㈰ⰴ潓瑵⁨潋敲湡洠牡楴污氠睡挠楲楳൳《⼶㈱㈯㈰ⰴ敒畳瑬⁳景删浯湡慩⁮牰獥摩湥楴污攠敬瑣潩⁮湡畮汬摥戠⁹潃獮楴畴楴湯污䌠畯瑲愠業⁤污敬慧楴湯⁳景删獵楳湡椠瑮牥敦敲据൥《⼸㈱㈯㈰ⰴ慆汬漠⁦桴⁥獁慳⁤敲楧敭਍〲ㄯ⼲〲㐲䴬条敤畢杲挠牡愠瑴捡൫《⼱㄰㈯㈰ⰵ䘢晩整湥瀠潥汰⁥牡⁥楫汬摥⠠湩汣摵湩⁧桴⁥数灲瑥慲潴⥲‬湡⁤㜵漠桴牥⁳牡⁥湩番敲⁤湩愠瘠桥捩敬爭浡業杮愠摮猠潨瑯湩⁧瑡慴正椠⁮敎⁷牏敬湡ⱳ䰠畯獩慩慮‬湕瑩摥匠慴整⹳ഢ《⼴㄰㈯㈰ⰵ畁瑳楲湡䌠慨据汥潬⁲態汲丠桥浡敭⁲湡潮湵散⁳楨⁳敲楳湧瑡潩⹮਍㘰〯⼱〲㔲䤬摮湯獥慩戠捥浯獥琠敨琠湥桴洠浥敢⁲潴樠楯⁮剂䍉⹓਍㜰〯⼱〲㔲∬片慥整⁲潌⁳湁敧敬⁳畳晦牥⁳瑩⁳潭瑳搠獥牴捵楴敶眠汩晤物獥※㤲搠慥桴ⱳㄠⰳ〰‰瑳畲瑣牵獥搠獥牴祯摥‬㠱ⰰ〰‰癥捡慵整⹤ഢ《⼸㄰㈯㈰ⰵ楅桧整湥朠湵敭⁮湡⁤湯⁥潳摬敩⁲牡⁥楫汬摥椠⁮湡愠瑴捡⁫湯䌠慨❤⁳牰獥摩湥楴污瀠污捡⹥਍㤰〯⼱〲㔲∬潊敳桰䄠畯⁮汥捥整⁤獡䰠扥湡湯胢玙瀠敲楳敤瑮戠⁹慰汲慩敭瑮‬湥楤杮愠琠潷礭慥⁲潰敷⁲慶畣浵∮਍〱〯⼱〲㔲∬潃数湲捩獵䌠楬慭整䌠慨杮⁥敓癲捩⁥敲潰瑲⁳〲㐲愠⁳桴⁥潨瑴獥⁴敹牡漠⁮敲潣摲‬畳灲獡楳杮ㄠ㔮냂⁃桴敲桳汯⹤ഢㄊ⼱㄰㈯㈰ⰵ䜢獡猠慴楴湯攠灸潬楳湯椠⁮汁䈠祡慤‬教敭⁮楫汬⁳〴愠摮椠橮牵獥搠穯湥⹳ഢㄊ⼲㄰㈯㈰ⰵ潚慲⁮楍慬潮楶蟄爠ⵥ汥捥整⁤牰獥摩湥⁴景䌠潲瑡慩മㄊ⼳㄰㈯㈰ⰵ潃敭⁴⽃〲㐲䜠″䄨䱔十 敲捡敨⁳数楲敨楬湯※畤扢摥吠敨䜠敲瑡䌠浯瑥漠⁦〲㔲മㄊ⼴㄰㈯㈰ⰵ圢牯摬䴠湥猧䠠湡扤污⁬桃浡楰湯桳灩栠汥⁤湩䌠潲瑡慩‬敄浮牡Ⱬ愠摮丠牯慷⹹䐠湥慭歲眠湩⹳ഢㄊ⼵㄰㈯㈰ⰵ慇慺眠牡›獉慲汥愠摮䠠浡獡愠牧敥琠⁯⁡散獡晥物⁥瑳牡楴杮䨠湡慵祲ㄠ⸹਍㔱〯⼱〲㔲䘬物瑳愠瑲晩捩慩⁬潷扭椠⁮慭獲灵慩獬挠敲瑡摥戠⁹潃潬獳污䈠潩捳敩据獥愠摮唠楮敶獲瑩⁹景䴠汥潢牵敮മㄊ⼶㄰㈯㈰ⰵ求敵传楲楧⁮慬湵档獥丠睥䜠敬湮爠捯敫㭴映楡獬琠⁯敲潣敶⁲楦獲⁴瑳条⹥਍㤱〯⼱〲㔲䜬穡⁡慷⁲散獡晥物⁥慴敫⁳晥敦瑣മ㈊⼱㄰㈯㈰ⰵ䘢物⁥瑡愠猠楫爠獥牯⁴潨整⁬湩䬠牡慴歬祡ⱡ吠牵敫⁹楫汬⁳㠷∮਍㌲〯⼱〲㔲䴬捩敨ꇃ⁬慍瑲湩爠ⵥ汥捥整⁤獡吠潡獩慥档漠⁦牉汥湡⹤਍㐲〯⼱〲㔲∬瑓牯⁭觃睯湹栠瑩⁳牉汥湡⁤湡⁤䭕※㠱″浫栯眠湩獤‬癯牥ㄠ洠汩楬湯氠獯⁥潰敷⹲ഢ㈊⼵㄰㈯㈰ⰵ䐢捡慩⁮效浬瑥漠⁦潃鯈景湥졥璙⁩湡⁤桴敲⁥潧摬愠瑲晩捡獴猠潴敬⁮牦浯䐠敲瑮⁳畍敳浵‬敎桴牥慬摮⹳ഢ㈊⼶㄰㈯㈰ⰵ敂慬畲楳湡瀠敲楳敤瑮慩⁬汥捥楴湯›界慫桳湥潫爠ⵥ汥捥整⹤਍㜲〯⼱〲㔲听捥⁨瑳捯獫搠潲⁰晡整⁲敄灥敓步挠慨扴瑯爠汥慥敳※癎摩慩氠獯獥渠慥汲⁹㘤〰戠汩楬湯椠⁮慶畬⹥਍㤲〯⼱〲㔲䴬摩愭物挠汯楬楳湯漠敶⁲潐潴慭⁣楒敶㩲㘠‷敤摡മ《⼴㈰㈯㈰ⰵ桃湩⁡浩潰敳⁳慴楲晦⁳湯唠匮‮潧摯⁳湩爠獥潰獮⁥潴吠畲灭胢玙琠牡晩獦മ《⼹㈰㈯㈰ⰵ慂瑬捩猠慴整⁳祳据牨湯穩⁥汥捥牴捩瑩⁹牧摩⁳楷桴挠湯楴敮瑮污䔠牵灯⹥਍〱〯⼲〲㔲∬畂⁳慦汬⁳景⁦牢摩敧椠⁮畇瑡浥污⁡楃祴※㔵欠汩敬Ɽ㤠猠牥潩獵祬椠橮牵摥∮਍㔱〯⼲〲㔲䴬桡浡畯⁤汁⁩潙獵潳晵攠敬瑣摥挠慨物漠⁦晁楲慣⁮湕潩⁮潃浭獩楳湯മㄊ⼷㈰㈯㈰ⰵ慍獳瀠潲整瑳⁳湩䤠摮湯獥慩漠敶⁲硥慰摮摥洠汩瑩牡⁹潰敷獲മㄊ⼸㈰㈯㈰ⰵ畐楴⁮湡⁤牔浵⁰湡潮湵散爠獥潴敲⁤单刭獵楳⁡楤汰浯瑡捩琠敩⁳瑡匠畡楤猠浵業⹴਍㤱〯⼲〲㔲䌬潲瑡慩樠楯獮琠敨䔠牵灯慥⁮捅湯浯捩䄠敲⹡਍㌲〯⼲〲㔲䜬牥慭⁮敦敤慲⁬汥捥楴湯›䑃⽕千⁕楷㭮䄠䑦瀠慬散⁳敳潣摮മ㈊⼵㈰㈯㈰ⰵ畓慤敮敳䄠物䘠牯散䄠⵮㘲挠慲桳›㘴搠慥⹤਍㠲〯⼲〲㔲娬汥湥歳祹瘠獩瑩⁳桗瑩⁥潈獵㭥吠畲灭愠摮嘠湡散挠楲楴楣敺唠牫楡敮眠牡攠晦牯獴മ《⼲㌰㈯㈰ⰵ楆敲汦⁹敁潲灳捡⁥慬摮⁳求敵䜠潨瑳䴠獩楳湯ㄠ漠⁮桴⁥潍湯眠瑩潨瑵琠捥湨捩污椠獳敵⹳਍㌰〯⼳〲㔲唬匮‮慰獵獥洠汩瑩牡⁹楡⁤潴唠牫楡敮മ《⼴㌰㈯㈰ⰵ潗汯祬洠捩⁥牣慥整⁤祢䌠汯獯慳⁬楂獯楣湥散⁳潦⁲慭浭瑯⁨敲楶慶⁬牰橯捥⹴਍㔰〯⼳〲㔲匬摵湡映汩獥朠湥捯摩⁥潣灭慬湩⁴条楡獮⁴䅕⁅瑡琠敨䤠䩃മ《⼸㌰㈯㈰ⰵㄢ〬〰‫楫汬摥椠⁮祓楲湡挠慲正潤湷椠⁮汁睡瑩⁥敲楧湯∮਍㠰〯⼳〲㔲∬灓捥慩⁬汏浹楰獣圠牯摬圠湩整⁲慇敭⁳敨摬椠⁮畔楲Ɱ䤠慴祬∮਍㤰〯⼳〲㔲䴬牡⁫慃湲祥戠捥浯獥䰠扩牥污倠牡祴氠慥敤⁲湡⁤敮⁷牐浩⁥楍楮瑳牥漠⁦慃慮慤മㄊ⼲㌰㈯㈰ⰵ敂楬敺湡朠湥牥污攠敬瑣潩㩮倠潥汰❥⁳湕瑩摥倠牡祴眠湩⁳条楡⹮਍㌱〯⼳〲㔲唬匮‮瑳牯獭愠摮琠牯慮潤獥欠汩⁬瑡氠慥瑳㐠⸰਍㘱〯⼳〲㔲∬潋跄湡⁩楮桧捴畬⁢楦敲›㤵欠汩敬Ɽㄠ㔵椠橮牵摥∮਍㠱〯⼳〲㔲∬獉慲汥⁩楡獲牴歩獥爠獥浵⁥湩䜠穡㭡挠慥敳楦敲攠摮ⱳ㔠ㄹ‫楫汬摥∮਍㤱〯⼳〲㔲䴬獡⁳牰瑯獥獴攠畲瑰椠⁮畔歲祥漠敶⁲牡敲瑳漠⁦獉慴扮汵洠祡牯മ㈊⼰㌰㈯㈰ⰵ楋獲祴䌠癯湥牴⁹汥捥整⁤楦獲⁴敦慭敬愠摮䄠牦捩湡䤠䍏倠敲楳敤瑮മ㈊⼱㌰㈯㈰ⰵ效瑡牨睯䄠物潰瑲猠畨獴搠睯⁮畤⁥潴洠獡楳敶瀠睯牥漠瑵条⹥਍㠲〯⼳〲㔲∬祍湡慭⁲慥瑲煨慵敫⠠⸷‷慭湧瑩摵⥥›ⰵㄴ″敤摡‬ㄱ㐬㈰椠橮牵摥∮਍ㄳ〯⼳〲㔲䌬牡扩敢湡朠極摬牥椠瑮潲畤散⁤湩䌠牵썡憧⁯湡⁤楓瑮䴠慡瑲湥മ�"
+              DTS:DTSID="{232E8673-30CA-4A82-A0D5-156D6C13E352}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BB71B511-B351-4432-BD8D-7EA2AE42BCA7}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="Z:\IDH\events_2012-2025.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{00353447-BFF5-48BC-A9B7-8B2429805801}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{3A302095-84BA-42B6-B0BD-41241DB5DE8E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8B2ACCF6-2660-4724-B661-462AA314E8E1}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="Z:\IDH\events_2012-2025.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{6972E263-9F77-45AA-957E-50024C79FFEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{47F58C64-9ADE-459A-9ED8-96F321E383BB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2AC862FE-BD79-44D0-BD00-66CFCED4E5D2}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="Z:\IDH\events_2012-2025.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{2FDDF037-3836-4E74-8BAA-780F6D80689F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{0A1FCF4D-7877-4D1E-BA05-E50F308A047A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A089F05D-ABB3-45FA-8003-B7761BAAD054}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="Z:\IDH\events_2012-2025.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{DBE2D2F5-AF5E-446F-920C-968C77830DC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{15D33EAA-4D08-4EDA-8C2A-102EFEDA41FA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CF00761B-4FAC-43E9-9EAD-BB463B661FEB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="400"
+                      cachedName="Date"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Date]"
+                      name="Copy of Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      length="400"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Event]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Event]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Event]"
+                      name="Event"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Event]"
+                      codePage="1250"
+                      dataType="str"
+                      length="400"
+                      name="Event" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [IOWA_STAGE].[CzasSt]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [IOWA_STAGE].[CzasSt]) [refTable]
+where [refTable].[Data] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdCzasT" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoraRoku" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Dzien" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Miesiac" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Rok" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Data" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Kwartal" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WydarzenieGeopolityczne" dataType="DT_STR" length="400" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Date]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql.s20806]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20806]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Copy of Date"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Date]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Data</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[WydarzenieGeopolityczne]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="400"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[WydarzenieGeopolityczne]"
+                      name="WydarzenieGeopolityczne"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">WydarzenieGeopolityczne</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[IOWA_STAGE].[CzasSt]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql.s20806]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20806]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydarzenieGeopolityczne]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="400"
+                      cachedName="WydarzenieGeopolityczne"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydarzenieGeopolityczne]"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[WydarzenieGeopolityczne]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCzasT]"
+                      dataType="i4"
+                      name="IdCzasT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoraRoku]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="PoraRoku" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dzien]"
+                      dataType="i4"
+                      name="Dzien" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Miesiac]"
+                      dataType="i4"
+                      name="Miesiac" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rok]"
+                      dataType="i4"
+                      name="Rok" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Data]"
+                      dataType="dbDate"
+                      name="Data" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Kwartal]"
+                      dataType="i4"
+                      name="Kwartal" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydarzenieGeopolityczne]"
+                      codePage="1250"
+                      dataType="str"
+                      length="400"
+                      name="WydarzenieGeopolityczne" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="756,243" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="707,152" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Data Flow Task\Lookup"
+          TopLeft="777,440" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Data Conversion"
+          TopLeft="749,284" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="782.5,194">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.5,90"
+              Start="0,0"
+              End="44.5,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41"
+                    Point2="0,45"
+                    Point3="4,45" />
+                  <mssgle:LineSegment
+                    End="40.5,45" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.5,45"
+                    Point2="44.5,45"
+                    Point3="44.5,49" />
+                  <mssgle:LineSegment
+                    End="44.5,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="830.25,326">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,114"
+              Start="0,0"
+              End="0,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="805,671" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          TopLeft="833.5,482">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="57,189"
+              Start="0,0"
+              End="57,181.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,90.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,90.5"
+                    Point2="0,94.5"
+                    Point3="4,94.5" />
+                  <mssgle:LineSegment
+                    End="53,94.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53,94.5"
+                    Point2="57,94.5"
+                    Point3="57,98.5" />
+                  <mssgle:LineSegment
+                    End="57,181.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.69138671875,99.5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[IOWA_STAGE].[CzasSt]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -2,23 +2,38 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>IOWA-IDH</Name>
-    <LastWriteTime>2025-05-31T15:05:39.5354968Z</LastWriteTime>
+    <LastWriteTime>2025-06-05T10:57:32.1797298Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>SklepSt.dtsx</Name>
-      <LastWriteTime>2025-05-31T14:55:40.1199891Z</LastWriteTime>
+      <LastWriteTime>2025-06-05T10:02:45.8959519Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>AlkoholSt.dtsx</Name>
-      <LastWriteTime>2025-05-31T14:55:41.4384825Z</LastWriteTime>
+      <LastWriteTime>2025-06-05T09:34:23.4524657Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Producent.dtsx</Name>
-      <LastWriteTime>2025-05-31T15:05:32.1658917Z</LastWriteTime>
+      <LastWriteTime>2025-06-05T09:37:06.9697784Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CenaSt.dtsx</Name>
+      <LastWriteTime>2025-06-05T10:01:26.4498505Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CzasSt.dtsx</Name>
+      <LastWriteTime>2025-06-05T10:23:29.8602451Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CzasSTEvents.dtsx</Name>
+      <LastWriteTime>2025-06-05T10:57:29.8196028Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

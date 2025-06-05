@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\",
+  "WorkspaceRootPath": "Z:\\IDH\\IOWA_IDH_PRO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\Producent.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\Producent.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CzasSTEvents.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\CzasSTEvents.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\SklepSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CzasSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\CzasSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\SklepSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\SklepSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\AlkoholST.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\AlkoholST.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CenaSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\CenaSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\AlkoholSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\AlkoholSt.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\Producent.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{CA6EB09C-20AC-40C3-B385-0AC1D4180E73}|IOWA-IDH\\IOWA-IDH.dtproj|solutionrelative:IOWA-IDH\\Producent.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,10 +43,46 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CzasSTEvents.dtsx [Design]",
+              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CzasSTEvents.dtsx",
+              "RelativeDocumentMoniker": "IOWA-IDH\\CzasSTEvents.dtsx",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CzasSTEvents.dtsx [Design]",
+              "RelativeToolTip": "IOWA-IDH\\CzasSTEvents.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-06-05T10:27:30.676Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CzasSt.dtsx [Design]",
+              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CzasSt.dtsx",
+              "RelativeDocumentMoniker": "IOWA-IDH\\CzasSt.dtsx",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CzasSt.dtsx [Design]",
+              "RelativeToolTip": "IOWA-IDH\\CzasSt.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-06-05T10:04:30.565Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CenaSt.dtsx [Design]",
+              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CenaSt.dtsx",
+              "RelativeDocumentMoniker": "IOWA-IDH\\CenaSt.dtsx",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\CenaSt.dtsx [Design]",
+              "RelativeToolTip": "IOWA-IDH\\CenaSt.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-06-05T09:49:31.196Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Producent.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\Producent.dtsx",
+              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\Producent.dtsx",
               "RelativeDocumentMoniker": "IOWA-IDH\\Producent.dtsx",
-              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\Producent.dtsx [Design]",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\Producent.dtsx [Design]",
               "RelativeToolTip": "IOWA-IDH\\Producent.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
               "WhenOpened": "2025-05-31T14:59:28.327Z",
@@ -42,11 +90,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SklepSt.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\SklepSt.dtsx",
+              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\SklepSt.dtsx",
               "RelativeDocumentMoniker": "IOWA-IDH\\SklepSt.dtsx",
-              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\SklepSt.dtsx [Design]",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\SklepSt.dtsx [Design]",
               "RelativeToolTip": "IOWA-IDH\\SklepSt.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
               "WhenOpened": "2025-05-31T14:52:29.212Z",
@@ -54,11 +102,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AlkoholSt.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\AlkoholST.dtsx",
+              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\AlkoholST.dtsx",
               "RelativeDocumentMoniker": "IOWA-IDH\\AlkoholST.dtsx",
-              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\IOWA-IDH\\AlkoholST.dtsx [Design]",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO\\IOWA-IDH\\AlkoholST.dtsx [Design]",
               "RelativeToolTip": "IOWA-IDH\\AlkoholST.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
               "WhenOpened": "2025-05-31T11:01:53.101Z",

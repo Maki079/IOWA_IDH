@@ -1,31 +1,31 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="5/31/2025 1:01:52 PM"
+  DTS:CreationDate="6/5/2025 11:49:31 AM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="VLAB003-21"
+  DTS:CreatorComputerName="VLAB003-12"
   DTS:CreatorName="PJWSTK\s22499"
-  DTS:DTSID="{64A199A3-119C-496A-AC10-91CC4B60C1B2}"
+  DTS:DTSID="{5B5C057C-B356-4050-8FF6-E9961FD1A30E}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1045"
-  DTS:ObjectName="AlkoholSt"
+  DTS:ObjectName="CenaSt"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{75028A03-9A2F-4232-A10E-94ED078B3795}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{3B8D75B6-8DC1-4288-BB04-BA3CC37EB50E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db-mssql.s20806]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{04F23BB5-EE51-4CD5-AED5-471736B8418E}"
+      DTS:DTSID="{DDAB242B-2119-4CA0-BB86-60CFF4037936}"
       DTS:ObjectName="db-mssql.s20806">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s20806;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{04F23BB5-EE51-4CD5-AED5-471736B8418E}db-mssql.s20806;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s20806;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-CenaSt-{DDAB242B-2119-4CA0-BB86-60CFF4037936}db-mssql.s20806;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -35,7 +35,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{EEF40EA2-269B-4730-9A36-6F826FB8BAD5}"
+      DTS:DTSID="{AE64A82E-C34C-48D8-B253-961841685303}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -61,7 +61,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[IOWA_STAGE].[AlkoholSt]</property>
+                  name="OpenRowset">[IOWA_STAGE].[CenaSt]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -118,80 +118,38 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AlkocholKod]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="AlkocholKod"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AlkocholKod]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlkocholKod]" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CenaDetal]"
+                      cachedDataType="cy"
+                      cachedName="CenaDetal"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CenaDetal]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CenaDetal]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AlkocholNazwa]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="200"
-                      cachedName="AlkocholNazwa"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AlkocholNazwa]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlkocholNazwa]" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CenaHurt]"
+                      cachedDataType="cy"
+                      cachedName="CenaHurt"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CenaHurt]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CenaHurt]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KategoriaNazwaClean]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="200"
-                      cachedName="KategoriaNazwaClean"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KategoriaNazwa]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KategoriaNazwaClean]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ObjButelkiMl]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdCena]"
                       cachedDataType="i4"
-                      cachedName="ObjButelkiMl"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObjButelkiMl]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ObjButelkiMl]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdAlkochol]"
-                      cachedDataType="i4"
-                      cachedName="IdAlkochol"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdAlkocholT]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdAlkochol]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cena_IdCena]"
-                      cachedDataType="i4"
-                      cachedName="Cena_IdCena"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cena_IdCenaT]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cena_IdCena]" />
+                      cachedName="IdCena"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCenaT]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCena]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdAlkocholT]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCenaT]"
                       dataType="i4"
-                      name="IdAlkocholT" />
+                      name="IdCenaT" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AlkocholKod]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="AlkocholKod" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CenaDetal]"
+                      dataType="cy"
+                      name="CenaDetal" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AlkocholNazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      name="AlkocholNazwa" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KategoriaNazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      name="KategoriaNazwa" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObjButelkiMl]"
-                      dataType="i4"
-                      name="ObjButelkiMl" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cena_IdCenaT]"
-                      dataType="i4"
-                      name="Cena_IdCenaT" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CenaHurt]"
+                      dataType="cy"
+                      name="CenaHurt" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -236,7 +194,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[IOWA_TRANS].[Alkohol]</property>
+                  name="OpenRowset">[IOWA_TRANS].[Cena]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -245,8 +203,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT IdAlkochol, AlkocholKod, AlkocholNazwa, ObjButelkiMl, Cena_IdCena, ISNULL(KategoriaNazwa,'Unknown') as KategoriaNazwaClean
-FROM IOWA_TRANS.Alkohol</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -263,7 +220,7 @@ FROM IOWA_TRANS.Alkohol</property>
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">2</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -283,98 +240,51 @@ FROM IOWA_TRANS.Alkohol</property>
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlkocholKod]"
-                      codePage="1250"
-                      dataType="str"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CenaDetal]"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AlkocholKod]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlkocholKod]"
-                      name="AlkocholKod"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CenaDetal]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CenaDetal]"
+                      name="CenaDetal"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlkocholNazwa]"
-                      codePage="1250"
-                      dataType="str"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CenaHurt]"
+                      dataType="cy"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AlkocholNazwa]"
-                      length="200"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AlkocholNazwa]"
-                      name="AlkocholNazwa"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CenaHurt]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CenaHurt]"
+                      name="CenaHurt"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ObjButelkiMl]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCena]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ObjButelkiMl]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ObjButelkiMl]"
-                      name="ObjButelkiMl"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdAlkochol]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdAlkochol]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdAlkochol]"
-                      name="IdAlkochol"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KategoriaNazwaClean]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KategoriaNazwaClean]"
-                      length="200"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KategoriaNazwaClean]"
-                      name="KategoriaNazwaClean"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cena_IdCena]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cena_IdCena]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cena_IdCena]"
-                      name="Cena_IdCena"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCena]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCena]"
+                      name="IdCena"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AlkocholKod]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="AlkocholKod" />
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CenaDetal]"
+                      dataType="numeric"
+                      name="CenaDetal"
+                      precision="10"
+                      scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AlkocholNazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      name="AlkocholNazwa" />
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CenaHurt]"
+                      dataType="numeric"
+                      name="CenaHurt"
+                      precision="10"
+                      scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ObjButelkiMl]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCena]"
                       dataType="i4"
-                      name="ObjButelkiMl" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdAlkochol]"
-                      dataType="i4"
-                      name="IdAlkochol" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KategoriaNazwaClean]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      name="KategoriaNazwaClean" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cena_IdCena]"
-                      dataType="i4"
-                      name="Cena_IdCena" />
+                      name="IdCena" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -383,41 +293,24 @@ FROM IOWA_TRANS.Alkohol</property>
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdAlkochol]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCena]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdAlkochol]"
-                      name="IdAlkochol" />
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCena]"
+                      name="IdCena" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AlkocholKod]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AlkocholKod]"
-                      name="AlkocholKod" />
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CenaDetal]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CenaDetal]"
+                      name="CenaDetal"
+                      precision="10"
+                      scale="2" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AlkocholNazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AlkocholNazwa]"
-                      name="AlkocholNazwa" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ObjButelkiMl]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ObjButelkiMl]"
-                      name="ObjButelkiMl" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Cena_IdCena]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Cena_IdCena]"
-                      name="Cena_IdCena" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KategoriaNazwaClean]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KategoriaNazwaClean]"
-                      name="KategoriaNazwaClean" />
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CenaHurt]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CenaHurt]"
+                      name="CenaHurt"
+                      precision="10"
+                      scale="2" />
                     <outputColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -450,7 +343,7 @@ FROM IOWA_TRANS.Alkohol</property>
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{C4189851-EA3A-4ACF-A6E0-2CB73D29562C}"
+      DTS:DTSID="{81F2BAAA-E6D1-44B0-9E77-460090AACD99}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -459,8 +352,8 @@ FROM IOWA_TRANS.Alkohol</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{04F23BB5-EE51-4CD5-AED5-471736B8418E}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE IOWA_STAGE.AlkoholSt" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{DDAB242B-2119-4CA0-BB86-60CFF4037936}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE IOWA_STAGE.CenaSt" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -468,7 +361,7 @@ FROM IOWA_TRANS.Alkohol</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{794B71BD-34B0-40B2-B7AA-0B70106164CE}"
+      DTS:DTSID="{26B8B342-4D33-4DFA-9EAE-E1EE6ABE4E68}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -487,27 +380,39 @@ FROM IOWA_TRANS.Alkohol</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task"
-          TopLeft="834,295" />
-        <NodeLayout
           Size="163,42"
           Id="Package\Execute SQL Task"
-          TopLeft="824,151" />
+          TopLeft="714,195" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="731,365" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="907.5,193">
+          TopLeft="795.5,237">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,102"
+              EndConnector="11,128"
               Start="0,0"
-              End="0,94.5">
+              End="11,120.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.5" />
+                    End="0,60" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60"
+                    Point2="0,64"
+                    Point3="4,64" />
+                  <mssgle:LineSegment
+                    End="7,64" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7,64"
+                    Point2="11,64"
+                    Point3="11,68" />
+                  <mssgle:LineSegment
+                    End="11,120.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -525,39 +430,39 @@ FROM IOWA_TRANS.Alkohol</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Data Flow Task\OLE DB Source"
-          TopLeft="861,259" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="862,467" />
+          TopLeft="809,492" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="805,266" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="936,301">
+          TopLeft="880,308">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="11.5,166"
+              EndConnector="14.5,184"
               Start="0,0"
-              End="11.5,158.5">
+              End="14.5,176.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,79" />
+                    End="0,88" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,79"
-                    Point2="0,83"
-                    Point3="4,83" />
+                    Point1="0,88"
+                    Point2="0,92"
+                    Point3="4,92" />
                   <mssgle:LineSegment
-                    End="7.5,83" />
+                    End="10.5,92" />
                   <mssgle:CubicBezierSegment
-                    Point1="7.5,83"
-                    Point2="11.5,83"
-                    Point3="11.5,87" />
+                    Point1="10.5,92"
+                    Point2="14.5,92"
+                    Point3="14.5,96" />
                   <mssgle:LineSegment
-                    End="11.5,158.5" />
+                    End="14.5,176.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -570,7 +475,7 @@ FROM IOWA_TRANS.Alkohol</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -583,7 +488,7 @@ FROM IOWA_TRANS.Alkohol</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
