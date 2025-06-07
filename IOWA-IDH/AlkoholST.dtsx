@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="AlkoholSt"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{75028A03-9A2F-4232-A10E-94ED078B3795}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{4977BCE3-F771-41BC-90AA-E763B0C91625}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -159,6 +159,12 @@
                       cachedName="Cena_IdCena"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cena_IdCenaT]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cena_IdCena]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Producent_IdProducent]"
+                      cachedDataType="i4"
+                      cachedName="Producent_IdProducent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Producent_IdProducent]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Producent_IdProducent]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -192,6 +198,10 @@
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cena_IdCenaT]"
                       dataType="i4"
                       name="Cena_IdCenaT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Producent_IdProducent]"
+                      dataType="i4"
+                      name="Producent_IdProducent" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -245,8 +255,8 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT IdAlkochol, AlkocholKod, AlkocholNazwa, ObjButelkiMl, Cena_IdCena, ISNULL(KategoriaNazwa,'Unknown') as KategoriaNazwaClean
-FROM IOWA_TRANS.Alkohol</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT     IdAlkochol, AlkocholKod, AlkocholNazwa, ObjButelkiMl, Cena_IdCena, ISNULL(KategoriaNazwa, 'Unknown') AS KategoriaNazwaClean, Producent_IdProducent
+FROM        IOWA_TRANS.Alkohol</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -342,6 +352,15 @@ FROM IOWA_TRANS.Alkohol</property>
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cena_IdCena]"
                       name="Cena_IdCena"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Producent_IdProducent]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Producent_IdProducent]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Producent_IdProducent]"
+                      name="Producent_IdProducent"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -375,6 +394,10 @@ FROM IOWA_TRANS.Alkohol</property>
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cena_IdCena]"
                       dataType="i4"
                       name="Cena_IdCena" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Producent_IdProducent]"
+                      dataType="i4"
+                      name="Producent_IdProducent" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -418,6 +441,11 @@ FROM IOWA_TRANS.Alkohol</property>
                       length="200"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KategoriaNazwaClean]"
                       name="KategoriaNazwaClean" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Producent_IdProducent]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Producent_IdProducent]"
+                      name="Producent_IdProducent" />
                     <outputColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -487,16 +515,16 @@ FROM IOWA_TRANS.Alkohol</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
+          Size="151.2,41.6"
           Id="Package\Data Flow Task"
-          TopLeft="834,295" />
+          TopLeft="130.428569930852,200.941176553034" />
         <NodeLayout
-          Size="163,42"
+          Size="163.2,41.6"
           Id="Package\Execute SQL Task"
-          TopLeft="824,151" />
+          TopLeft="120.428569930852,56.9411765530344" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="907.5,193">
+          TopLeft="203.928569930852,98.9411765530344">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -525,16 +553,16 @@ FROM IOWA_TRANS.Alkohol</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
+          Size="150.4,41.6"
           Id="Package\Data Flow Task\OLE DB Source"
-          TopLeft="861,259" />
+          TopLeft="193.653059803883,79.8403362914941" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="862,467" />
+          TopLeft="194.653059803883,287.840336291494" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="936,301">
+          TopLeft="268.653059803883,121.840336291494">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -570,7 +598,7 @@ FROM IOWA_TRANS.Alkohol</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -583,7 +611,7 @@ FROM IOWA_TRANS.Alkohol</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

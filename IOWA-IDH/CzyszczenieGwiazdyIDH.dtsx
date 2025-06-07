@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/7/2025 2:14:55 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MAKI"
+  DTS:CreatorName="MAKI\Maki"
+  DTS:DTSID="{49B7A6C1-8278-4D1D-BAA2-A3E0BB3E1681}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{2C5894CC-F228-4DAF-BE72-3F66C9150E75}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>

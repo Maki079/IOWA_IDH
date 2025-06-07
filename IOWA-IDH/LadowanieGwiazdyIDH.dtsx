@@ -1,0 +1,985 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/7/2025 1:47:01 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MAKI"
+  DTS:CreatorName="MAKI\Maki"
+  DTS:DTSID="{ED8F6098-DF5A-4BDC-AC63-D5E04382B4A7}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{505E1C9B-A738-4DD0-9531-6FB3B4524301}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s20806]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{04F23BB5-EE51-4CD5-AED5-471736B8418E}"
+      DTS:ObjectName="db-mssql.s20806">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s20806;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{04F23BB5-EE51-4CD5-AED5-471736B8418E}db-mssql.s20806;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{A84BECEA-FA39-46E7-991C-2F93E327404F}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Wymiar Czas"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{F1CA4252-3C2A-4BA6-A324-D1997EFB93A8}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Wymiar Czas"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[IOWA_STAGE].[CzasSt]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db-mssql.s20806]"
+                      connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20806]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PoraRoku]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="PoraRoku"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoraRoku]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[PoraRoku]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dzien]"
+                          cachedDataType="i4"
+                          cachedName="Dzien"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dzien]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dzien]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Miesiac]"
+                          cachedDataType="i4"
+                          cachedName="Miesiac"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Miesiac]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Miesiac]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rok]"
+                          cachedDataType="i4"
+                          cachedName="Rok"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rok]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rok]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Data]"
+                          cachedDataType="dbDate"
+                          cachedName="Data"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Data]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Kwartal]"
+                          cachedDataType="i4"
+                          cachedName="Kwartal"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Kwartal]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kwartal]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WydarzenieGeopolityczne]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="400"
+                          cachedName="WydarzenieGeopolityczne"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydarzenieGeopolityczne]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[WydarzenieGeopolityczne]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCzasT]"
+                          dataType="i4"
+                          name="IdCzasT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoraRoku]"
+                          codePage="1250"
+                          dataType="str"
+                          length="100"
+                          name="PoraRoku" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dzien]"
+                          dataType="i4"
+                          name="Dzien" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Miesiac]"
+                          dataType="i4"
+                          name="Miesiac" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rok]"
+                          dataType="i4"
+                          name="Rok" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Data]"
+                          dataType="dbDate"
+                          name="Data" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Kwartal]"
+                          dataType="i4"
+                          name="Kwartal" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WydarzenieGeopolityczne]"
+                          codePage="1250"
+                          dataType="str"
+                          length="400"
+                          name="WydarzenieGeopolityczne" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Wymiar Czas\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[IOWA_STAGE].[CzasStWyd]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT     IdCzasWydT, PoraRoku, Dzien, Miesiac, Rok, Data, Kwartal, ISNULL(WydarzenieGeopolityczne,'Brak wydarzenia') AS WydarzenieGeopolityczne
+FROM        IOWA_STAGE.CzasStWyd</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db-mssql.s20806]"
+                      connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20806]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCzasWydT]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCzasWydT]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCzasWydT]"
+                          name="IdCzasWydT"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[PoraRoku]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PoraRoku]"
+                          length="100"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[PoraRoku]"
+                          name="PoraRoku"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dzien]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Dzien]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dzien]"
+                          name="Dzien"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Miesiac]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Miesiac]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Miesiac]"
+                          name="Miesiac"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rok]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rok]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rok]"
+                          name="Rok"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]"
+                          name="Data"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kwartal]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kwartal]"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kwartal]"
+                          name="Kwartal"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[WydarzenieGeopolityczne]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[WydarzenieGeopolityczne]"
+                          length="400"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[WydarzenieGeopolityczne]"
+                          name="WydarzenieGeopolityczne"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCzasWydT]"
+                          dataType="i4"
+                          name="IdCzasWydT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PoraRoku]"
+                          codePage="1250"
+                          dataType="str"
+                          length="100"
+                          name="PoraRoku" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Dzien]"
+                          dataType="i4"
+                          name="Dzien" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Miesiac]"
+                          dataType="i4"
+                          name="Miesiac" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rok]"
+                          dataType="i4"
+                          name="Rok" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                          dataType="dbDate"
+                          name="Data" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kwartal]"
+                          dataType="i4"
+                          name="Kwartal" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[WydarzenieGeopolityczne]"
+                          codePage="1250"
+                          dataType="str"
+                          length="400"
+                          name="WydarzenieGeopolityczne" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCzasWydT]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCzasWydT]"
+                          name="IdCzasWydT" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PoraRoku]"
+                          codePage="1250"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PoraRoku]"
+                          name="PoraRoku" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Dzien]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Dzien]"
+                          name="Dzien" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Miesiac]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Miesiac]"
+                          name="Miesiac" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rok]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rok]"
+                          name="Rok" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data]"
+                          dataType="dbDate"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data]"
+                          name="Data" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kwartal]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kwartal]"
+                          name="Kwartal" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[WydarzenieGeopolityczne]"
+                          codePage="1250"
+                          dataType="str"
+                          length="400"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[WydarzenieGeopolityczne]"
+                          name="WydarzenieGeopolityczne" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Wymiar Czas.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Wymiar Czas\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Wymiar Czas\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Wymiar Producent"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{A235A3A8-5038-41D0-AC15-9018651FF216}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Wymiar Producent"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[IOWA_GWIAZDA].[Producent]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db-mssql.s20806]"
+                      connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20806]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProducentKod]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProducentKod"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nazwa]"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProducentKod]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdProducent]"
+                          dataType="i4"
+                          name="IdProducent" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nazwa]"
+                          codePage="1250"
+                          dataType="str"
+                          length="200"
+                          name="Nazwa" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Wymiar Producent\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[IOWA_STAGE].[ProducentSt]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[db-mssql.s20806]"
+                      connectionManagerRefId="Package.ConnectionManagers[db-mssql.s20806]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdProducentT]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdProducentT]"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdProducentT]"
+                          name="IdProducentT"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProducentKod]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProducentKod]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProducentKod]"
+                          name="ProducentKod"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProducentNazwa]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProducentNazwa]"
+                          length="200"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProducentNazwa]"
+                          name="ProducentNazwa"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdProducentT]"
+                          dataType="i4"
+                          name="IdProducentT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProducentKod]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="ProducentKod" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProducentNazwa]"
+                          codePage="1250"
+                          dataType="str"
+                          length="200"
+                          name="ProducentNazwa" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdProducentT]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdProducentT]"
+                          name="IdProducentT" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProducentKod]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProducentKod]"
+                          name="ProducentKod" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProducentNazwa]"
+                          codePage="1250"
+                          dataType="str"
+                          length="200"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProducentNazwa]"
+                          name="ProducentNazwa" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Wymiar Producent.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Wymiar Producent\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Wymiar Producent\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Sequence Container\Wymiar Czas"
+          TopLeft="15.2857143693433,21.3647058019176" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\Wymiar Producent"
+          TopLeft="193.857143320904,24.4235293286482" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="380,165.6"
+          Size="380,208.8"
+          Id="Package\Sequence Container"
+          TopLeft="24.2857143374122,27.5294117405752" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Wymiar Czas">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Sequence Container\Wymiar Czas\OLE DB Source"
+          TopLeft="155.000000329954,82.5882352217259" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\Wymiar Czas\OLE DB Destination"
+          TopLeft="349.285715029252,244.705882138447" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Wymiar Czas.Paths[OLE DB Source Output]"
+          TopLeft="229.800000329954,124.188235221726">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="204.685714699298,120.517646916721"
+              Start="0,0"
+              End="204.685714699298,113.017646916721">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.2588234583606" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.2588234583606"
+                    Point2="0,60.2588234583606"
+                    Point3="4,60.2588234583606" />
+                  <mssgle:LineSegment
+                    End="200.685714699298,60.2588234583606" />
+                  <mssgle:CubicBezierSegment
+                    Point1="200.685714699298,60.2588234583606"
+                    Point2="204.685714699298,60.2588234583606"
+                    Point3="204.685714699298,64.2588234583606" />
+                  <mssgle:LineSegment
+                    End="204.685714699298,113.017646916721" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Wymiar Czas\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Wymiar Czas\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Wymiar Producent">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Sequence Container\Wymiar Producent\OLE DB Source"
+          TopLeft="311.999995350838,109.999998360872" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\Wymiar Producent\OLE DB Destination"
+          TopLeft="475.999992907047,278.999995842576" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Wymiar Producent.Paths[OLE DB Source Output]"
+          TopLeft="386.799995350838,151.599998360872">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="174.39999755621,127.399997481704"
+              Start="0,0"
+              End="174.39999755621,119.899997481704">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.6999987408519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59.6999987408519"
+                    Point2="0,63.6999987408519"
+                    Point3="4,63.6999987408519" />
+                  <mssgle:LineSegment
+                    End="170.39999755621,63.6999987408519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="170.39999755621,63.6999987408519"
+                    Point2="174.39999755621,63.6999987408519"
+                    Point3="174.39999755621,67.6999987408519" />
+                  <mssgle:LineSegment
+                    End="174.39999755621,119.899997481704" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Wymiar Producent\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Wymiar Producent\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
