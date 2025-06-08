@@ -1,0 +1,315 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9e78382c-1095-405a-ade2-11e75dd5c477" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>s20806</ID>
+  <Name>s20806</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="f0556193-3bce-4997-b41f-783451e40d92">
+      <ID>Czas</ID>
+      <Name>Czas</Name>
+      <DimensionID>Czas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="46bdfd59-49f6-48ef-ab92-e83efe3f0bbd">
+          <AttributeID>Id Czas</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fcf98f3-9e72-42ac-958c-6e0bc72b98af">
+          <AttributeID>Pora Roku</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7ee4c20-7f46-4420-98f6-e6775edc8ec4">
+          <AttributeID>Dzien</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31714914-a10a-4336-a964-9521ac3eb0b3">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bbca53eb-759b-41c5-843c-b410e7fdcef9">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91e9dcd1-d8f3-4810-a318-91d8f0561922">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78fe1dbb-4dd6-450d-a906-46d1e872056f">
+          <AttributeID>Kwartal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86b80674-8309-481d-b186-d0e7c271feb7">
+          <AttributeID>Wydarzenie Geopolityczne</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="40929c81-daa5-44d6-b4fd-7417dc5d26a8">
+      <ID>Cena</ID>
+      <Name>Cena</Name>
+      <DimensionID>Cena</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="293b0154-8d03-4be8-b879-002c6a30d173">
+          <AttributeID>Id Cena</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c14375e7-37fc-4245-96c8-b406e063d9c5">
+          <AttributeID>Wartosc Hurtowa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="287b22db-859d-49f4-a42c-250960be545f">
+          <AttributeID>Wartosc Detaliczna</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4cf25a90-fdc5-4f37-ab7e-36421a0c48a4">
+      <ID>Alkohol</ID>
+      <Name>Alkohol</Name>
+      <DimensionID>Alkohol</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3062aaf2-a80a-4874-9ea9-2d80d8adee44">
+          <AttributeID>Id Alkohol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29dd85c0-19ff-47b5-ba1a-0244545d58a4">
+          <AttributeID>Alkohol Kod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bec1383b-0e94-4011-8e4c-cc7ee90d97b1">
+          <AttributeID>Alkohol Nazwa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f19a791-ed45-4ffa-bb3f-e914d82d49db">
+          <AttributeID>Kategoria Nazwa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c7d71e8-ca50-4d5e-a25a-ef92e0f90453">
+          <AttributeID>Obj Butelki Ml</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="224e9227-03e8-4529-87aa-47f45f08bffc">
+          <AttributeID>Id Cena T</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e5f67a31-3377-4c19-9b5d-dc1fcba03228">
+          <AttributeID>Id Producent T</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="15b9b932-89d9-42ce-97d9-7536c1316ff7">
+      <ID>Sklep</ID>
+      <Name>Sklep</Name>
+      <DimensionID>Sklep</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="28af5b8d-8da4-445f-a1f1-79845f6e6b40">
+          <AttributeID>Id Sklep</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a359c7b8-b608-47d4-b44f-f11103203dab">
+          <AttributeID>Sklep K Od</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4ea14963-1871-4759-a1c1-56274e330890">
+          <AttributeID>Nazwa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c4b1b0fa-f33b-486f-9609-9db7ba068d1b">
+          <AttributeID>Adres</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="569ea6ec-0f92-4587-b382-0c89e45a9f4d">
+          <AttributeID>Miasto</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bca1cbe1-e5c0-41ac-98f9-aefbe55ffe8a">
+      <ID>Producent</ID>
+      <Name>Producent</Name>
+      <DimensionID>Producent</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="498cb085-1d03-459c-ae18-fd55d5b61f6d">
+          <AttributeID>Id Producent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53554c3c-937b-4059-900d-0a1995c9fbae">
+          <AttributeID>Producent Kod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a0e046ae-4d94-4725-9b59-b7a36257bb11">
+          <AttributeID>Nazwa</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="21bd8e0c-039e-4695-8309-475ba4a21e7a">
+      <ID>Sprzedaz</ID>
+      <Name>Sprzedaz</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a38f49b0-1c39-4530-a6a7-48c6f0fe7f30">
+          <ID>Laczna Kwota Sprzedazy</ID>
+          <Name>Laczna Kwota Sprzedazy</Name>
+          <Source dwd:design-time-name="6bd327fd-7b05-496c-a143-04fe06905a87">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2c43a79c-76de-467c-90b9-17e67741d00a">
+              <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+              <ColumnID>LacznaKwotaSprzedazy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7ca722f8-2791-401d-9c45-04eeb6e7e737">
+          <ID>Laczna Ilosc Sprzedanych Butelek</ID>
+          <Name>Laczna Ilosc Sprzedanych Butelek</Name>
+          <Source dwd:design-time-name="461968ae-02ad-4821-b282-76834f69c85f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6dad19d7-b1b7-422b-a61c-8fa370e2559f">
+              <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+              <ColumnID>LacznaIloscSprzedanychButelek</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3e16d5eb-e2f3-40c5-b28a-28daa16d86dc">
+          <ID>Laczna Ilosc Sprzedanego Alkoholu W Litrach</ID>
+          <Name>Laczna Ilosc Sprzedanego Alkoholu W Litrach</Name>
+          <Source dwd:design-time-name="bf80a9ed-7996-4e54-bded-5f503ed26f3e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="84b8a0d5-db99-4d46-ab76-6a21d73c1acc">
+              <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+              <ColumnID>LacznaIloscSprzedanegoAlkoholuWLitrach</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e569e118-05e7-455e-b2e7-090acc642cc3">
+          <ID>Sprzedaz Count</ID>
+          <Name>Sprzedaz Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b636d6cc-2554-4421-8fec-23e1351e07ae">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="66459082-7432-456a-a5ad-8d7933067ad9">
+              <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0f5fa3c6-574d-438c-849e-74f1a5fa5157">
+          <CubeDimensionID>Czas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fceb72bb-0196-460a-a076-eb24eaefce84">
+              <AttributeID>Id Czas</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="63dd66da-b3b5-4301-9d46-d132c707c1f7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="594a9485-c8f0-40c8-8126-13806ccd60e9">
+                    <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+                    <ColumnID>IdCzas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e22383bf-7446-4632-8bc2-73de56e13a76">
+          <CubeDimensionID>Cena</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="618fa953-d4f2-4263-8cf9-4194a29d3d67">
+              <AttributeID>Id Cena</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bca0030-a2ed-40b1-8e30-b85980a385dd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dc0f6114-6f2a-4830-a70a-9704e55563c5">
+                    <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+                    <ColumnID>IdCena</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a815897f-ca98-4398-ad59-e7a71998ad7c">
+          <CubeDimensionID>Alkohol</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9cbd0ae1-3483-4ae6-8f5a-dcf78d35f13e">
+              <AttributeID>Id Alkohol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cf8912e1-349e-4d5d-8a71-2c33861b74ca">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49ddccf2-f5dd-432c-b8b4-5cb0f6af1dca">
+                    <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+                    <ColumnID>IdAlkohol</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fc67eb6a-86eb-47a3-ae0c-0f2e05884de8">
+          <CubeDimensionID>Sklep</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3bca8cf7-043a-494c-a6fd-bf72eb61e2ad">
+              <AttributeID>Id Sklep</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75632cd6-6d65-4b6c-8b9a-4fb2cb62552e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="faacd75a-e0da-41cc-baeb-428d6b9519e3">
+                    <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+                    <ColumnID>IdSklep</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bf5bd44b-c6cb-41ec-ad2b-fbb5bf206372">
+          <CubeDimensionID>Producent</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0069eb7b-4d19-4e14-b5e9-37735f17808a">
+              <AttributeID>Id Producent</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="870affac-bb73-4885-b84d-76011e1241be">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="504f2c5b-987d-492e-8488-572e4350e14b">
+                    <TableID>IOWA_GWIAZDA_Sprzedaz</TableID>
+                    <ColumnID>IdProducent</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9ab9ef96-2f54-40ca-94d2-904d0a18e40d">
+    <DataSourceViewID>s20806</DataSourceViewID>
+  </Source>
+</Cube>

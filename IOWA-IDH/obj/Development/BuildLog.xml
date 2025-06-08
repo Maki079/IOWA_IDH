@@ -2,43 +2,53 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>IOWA-IDH</Name>
-    <LastWriteTime>2025-06-07T10:58:32.0924649Z</LastWriteTime>
+    <LastWriteTime>2025-06-08T09:49:28.6113385Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>SklepSt.dtsx</Name>
-      <LastWriteTime>2025-06-07T06:36:42.9793256Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:05.0714476Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>AlkoholSt.dtsx</Name>
-      <LastWriteTime>2025-06-07T09:48:31.7294803Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:02.5751624Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Producent.dtsx</Name>
-      <LastWriteTime>2025-06-07T06:36:42.9783191Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:04.896458Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CenaSt.dtsx</Name>
-      <LastWriteTime>2025-06-07T06:36:42.9753193Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:02.700164Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CzasSt.dtsx</Name>
-      <LastWriteTime>2025-06-07T07:44:49.9185491Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:02.968905Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CzasSTEvents.dtsx</Name>
-      <LastWriteTime>2025-06-07T08:18:15.71898Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:02.8251682Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Sprzedaz.dtsx</Name>
-      <LastWriteTime>2025-06-07T11:05:34.3954192Z</LastWriteTime>
+      <LastWriteTime>2025-06-08T09:10:05.1027034Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>LadowanieGwiazdyIDH.dtsx</Name>
+      <LastWriteTime>2025-06-08T09:46:33.1165577Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CzyszczenieGwiazdyIDH.dtsx</Name>
+      <LastWriteTime>2025-06-08T09:52:50.4444653Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

@@ -1,0 +1,199 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8bd634b5-6cef-43b6-8e86-efc9f7dcbcc3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Alkohol</ID>
+  <Name>Alkohol</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1a1b2cd4-6728-4164-b510-3df43b3545dc">
+    <DataSourceViewID>s20806</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f6f93ae6-0538-4086-9038-93f23f8ecf26">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b70b149c-b069-4d5f-a5cc-abb3394c67dd">
+      <ID>Id Alkohol</ID>
+      <Name>Id Alkohol</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3c5dfc5-9885-487c-a027-bba069ada524">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5d8c073-b11a-4938-a1e4-4fe9dfcd05f3">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>IdAlkohol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7b11b69a-cc24-4094-810a-86e3e7a965f7">
+          <AttributeID>Alkohol Kod</AttributeID>
+          <Name>Alkohol Kod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6bffa556-6367-4044-97bb-a1575c7f029b">
+          <AttributeID>Alkohol Nazwa</AttributeID>
+          <Name>Alkohol Nazwa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d6c761d-9386-42d6-9ccb-5d333fb7524e">
+          <AttributeID>Kategoria Nazwa</AttributeID>
+          <Name>Kategoria Nazwa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d7efd51f-a744-43f2-8ba0-f872ef9d077f">
+          <AttributeID>Obj Butelki Ml</AttributeID>
+          <Name>Obj Butelki Ml</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0f32513-0db1-46ae-ab97-f1c7177ea90d">
+          <AttributeID>Id Cena T</AttributeID>
+          <Name>Id Cena T</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3904dbc9-a1a1-4893-9fca-f874d4f5232c">
+          <AttributeID>Id Producent T</AttributeID>
+          <Name>Id Producent T</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4c344fb6-8049-4806-b06e-223ad91da1cd">
+      <ID>Alkohol Kod</ID>
+      <Name>Alkohol Kod</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1378d7da-3931-4ddb-a356-04208a9f2eea">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="70d43f34-4909-4c91-b053-d5e63f204d19">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>AlkoholKod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e8aa35f-404f-4be2-99e5-3a83671891c4">
+      <ID>Alkohol Nazwa</ID>
+      <Name>Alkohol Nazwa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5979594a-c199-41d1-b67f-8e80c4a294e7">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59baac34-7188-4ad4-a729-e3a13fa415a1">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>AlkoholNazwa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="05e91d6b-ae01-4c88-be5b-b03db32cbab3">
+      <ID>Kategoria Nazwa</ID>
+      <Name>Kategoria Nazwa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95b55858-87a9-4de0-9941-cfdec5c2ea8e">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f82fbbe-16af-45ba-af7b-703e0e0789a5">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>KategoriaNazwa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8b6e434-3272-4b70-a4a7-976176d87a10">
+      <ID>Obj Butelki Ml</ID>
+      <Name>Obj Butelki Ml</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9791a6b1-4a5e-4a7b-9f51-657dac52ab85">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98afad68-5aed-4d0d-b5f0-5963c353b9da">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>ObjButelkiMl</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="13e3d2a4-6136-445e-ab27-7783adb5fdb3">
+      <ID>Id Cena T</ID>
+      <Name>Id Cena T</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc0bd435-efc7-4543-b935-6b902d9d5cab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ac4fb82-3e1d-4642-ba89-79f0e38b817e">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>IdCenaT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c663f21-d88d-40a2-acc7-00b705d86f99">
+      <ID>Id Producent T</ID>
+      <Name>Id Producent T</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61ed8f42-f364-4913-bd53-197909038215">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd8cc230-96cb-4235-8684-4ed717671af4">
+            <TableID>IOWA_GWIAZDA_Alkohol</TableID>
+            <ColumnID>IdProducentT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
