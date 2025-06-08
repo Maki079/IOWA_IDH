@@ -1,0 +1,160 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="74675121-d8b2-4bc1-9621-e1a9cde053f5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sklep</ID>
+  <Name>Sklep</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="03c0c6f8-b557-465c-9abe-b890e9507582">
+    <DataSourceViewID>s20806</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a6125cfc-d0c0-4d23-ae05-32b9468d8a36">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d8ff5895-56cf-4467-a012-67963c074144">
+      <ID>Id Sklep</ID>
+      <Name>Id Sklep</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c6b6e163-4cee-41b0-ba22-8a46a8dd5a7d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ae5a83c-17f1-49c9-ab79-33e93b35c68c">
+            <TableID>IOWA_GWIAZDA_Sklep</TableID>
+            <ColumnID>IdSklep</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b9063804-ad6f-49cb-afad-ff25eaffa82e">
+          <AttributeID>Sklep K Od</AttributeID>
+          <Name>Sklep K Od</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="177920e7-7ac8-4315-bec9-d2ccf073645b">
+          <AttributeID>Nazwa</AttributeID>
+          <Name>Nazwa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b59ffd00-63fa-46fe-ae4e-fa3824d874a9">
+          <AttributeID>Adres</AttributeID>
+          <Name>Adres</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5aa49e3c-bc37-4e50-8e86-fb4f80e58840">
+          <AttributeID>Miasto</AttributeID>
+          <Name>Miasto</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d8491de9-3d4a-41ea-b45b-d5f34fd4d178">
+      <ID>Sklep K Od</ID>
+      <Name>Sklep K Od</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e2e750f-bcd2-42d4-b9ec-a5d6328094ff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec2f642d-3ed3-4e47-98c9-835f8c3bad6e">
+            <TableID>IOWA_GWIAZDA_Sklep</TableID>
+            <ColumnID>SklepKOd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db6cea3d-e4ca-4e10-9dec-5a421340536f">
+      <ID>Nazwa</ID>
+      <Name>Nazwa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2734bad7-a456-4460-9685-777cc2be9cf4">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94ea90d0-d49a-4e4b-92f0-ecc1a45cc963">
+            <TableID>IOWA_GWIAZDA_Sklep</TableID>
+            <ColumnID>Nazwa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9f4d4f8e-67a1-443e-b583-b0ba44d3cc08">
+      <ID>Adres</ID>
+      <Name>Adres</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1ed9346-bdd7-4f91-a103-e7a42bf7b07e">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc575134-fa9b-468e-82ed-7ed351bb11e8">
+            <TableID>IOWA_GWIAZDA_Sklep</TableID>
+            <ColumnID>Adres</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0d2397ad-8dc0-46a6-bb3d-bb1b58358689">
+      <ID>Miasto</ID>
+      <Name>Miasto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7a773aa-da5a-4ac1-9b60-5834e6303bfe">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de146eb9-ccbc-4492-8d22-c1a3a5959b27">
+            <TableID>IOWA_GWIAZDA_Sklep</TableID>
+            <ColumnID>Miasto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
