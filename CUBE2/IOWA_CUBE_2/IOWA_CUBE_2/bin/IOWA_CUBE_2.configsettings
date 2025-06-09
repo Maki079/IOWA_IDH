@@ -6,8 +6,8 @@
         <ConnectionString>Provider=SQLOLEDB.1;Data Source=db-mssql;Integrated Security=SSPI;Initial Catalog=s20806</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PJWSTK\s22499</Account>
-          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PJWSTK\s23249</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>

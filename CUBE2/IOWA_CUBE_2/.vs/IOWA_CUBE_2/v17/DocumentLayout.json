@@ -1,38 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\",
+  "WorkspaceRootPath": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\s20806.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|XML",
-      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|XML"
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\s20806.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Producent.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Producent.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Alkohol.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Alkohol.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Alkohol.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Czas.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|XML",
+      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|XML"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Czas.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Czas.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Sklep.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Sklep.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Sklep.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Cena.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Cena.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Cena.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Producent.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{2DAFF091-3743-4568-79BA-6197F78E3024}|IOWA_CUBE_2\\IOWA_CUBE_2.dwproj|solutionrelative:IOWA_CUBE_2\\Producent.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,11 +54,23 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "s20806.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.dsv",
+              "RelativeDocumentMoniker": "IOWA_CUBE_2\\s20806.dsv",
+              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.dsv [Design]",
+              "RelativeToolTip": "IOWA_CUBE_2\\s20806.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-09T23:24:32.877Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "s20806.cube [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.cube",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.cube",
               "RelativeDocumentMoniker": "IOWA_CUBE_2\\s20806.cube",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.cube [Design]",
+              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\s20806.cube [Design]",
               "RelativeToolTip": "IOWA_CUBE_2\\s20806.cube [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-08T12:02:49.378Z",
@@ -62,36 +78,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Role.role [XML]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role",
               "RelativeDocumentMoniker": "IOWA_CUBE_2\\Role.role",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role [XML]",
+              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role [XML]",
               "RelativeToolTip": "IOWA_CUBE_2\\Role.role [XML]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-08T12:02:00.054Z",
               "EditorCaption": " [XML]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Role.role [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role",
-              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Role.role",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role [Design]",
-              "RelativeToolTip": "IOWA_CUBE_2\\Role.role [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-08T12:01:50.5Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Alkohol.dim [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Alkohol.dim",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Alkohol.dim",
               "RelativeDocumentMoniker": "IOWA_CUBE_2\\Alkohol.dim",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Alkohol.dim [Design]",
+              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Alkohol.dim [Design]",
               "RelativeToolTip": "IOWA_CUBE_2\\Alkohol.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-08T12:01:44.722Z",
@@ -99,51 +103,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Czas.dim [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Czas.dim",
-              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Czas.dim",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Czas.dim [Design]",
-              "RelativeToolTip": "IOWA_CUBE_2\\Czas.dim [Design]",
+              "DocumentIndex": 2,
+              "Title": "Producent.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Producent.dim",
+              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Producent.dim",
+              "ToolTip": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Producent.dim [Design]",
+              "RelativeToolTip": "IOWA_CUBE_2\\Producent.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-08T12:01:33.12Z",
+              "WhenOpened": "2025-06-08T11:59:00.506Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Sklep.dim [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Sklep.dim",
-              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Sklep.dim",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Sklep.dim [Design]",
-              "RelativeToolTip": "IOWA_CUBE_2\\Sklep.dim [Design]",
+              "Title": "Role.role [Design]",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role",
+              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Role.role",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Role.role [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-08T11:59:37.228Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-08T12:01:50.5Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Cena.dim [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Cena.dim",
-              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Cena.dim",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Cena.dim [Design]",
-              "RelativeToolTip": "IOWA_CUBE_2\\Cena.dim [Design]",
+              "Title": "Czas.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Czas.dim",
+              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Czas.dim",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Czas.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-08T11:59:19.895Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-08T12:01:33.12Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Producent.dim [Design]",
-              "DocumentMoniker": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Producent.dim",
-              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Producent.dim",
-              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Producent.dim [Design]",
-              "RelativeToolTip": "IOWA_CUBE_2\\Producent.dim [Design]",
+              "Title": "Sklep.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Sklep.dim",
+              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Sklep.dim",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Sklep.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-08T11:59:00.506Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-08T11:59:37.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cena.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\Maki\\source\\repos\\IOWA_IDH\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Cena.dim",
+              "RelativeDocumentMoniker": "IOWA_CUBE_2\\Cena.dim",
+              "ToolTip": "Z:\\IDH\\IOWA_IDH_PRO2\\CUBE2\\IOWA_CUBE_2\\IOWA_CUBE_2\\Cena.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-08T11:59:19.895Z"
             }
           ]
         }

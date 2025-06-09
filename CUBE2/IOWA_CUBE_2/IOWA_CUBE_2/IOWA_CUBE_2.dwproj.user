@@ -3,8 +3,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>db-mssql</TargetServer>
-        <TargetDatabase>s20806</TargetDatabase>
+        <TargetServer>db-mssql.pjwstk.edu.pl</TargetServer>
+        <TargetDatabase>l0453</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
