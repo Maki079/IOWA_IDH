@@ -1,0 +1,190 @@
+use s20806
+
+-- Producent
+INSERT INTO IOWA_TRANS.Producent (ProducentKod, ProducentNazwa)
+SELECT 
+    vendor_no,
+    vendor_name
+FROM (
+    SELECT 
+        CAST([vendor_no] as varchar(50)) as vendor_no,
+        CAST([vendor_name] as varchar(200)) as vendor_name,
+        ROW_NUMBER() OVER (PARTITION BY [vendor_no] ORDER BY [date] DESC) as rn
+    FROM IDH_Alkohol
+    WHERE vendor_no IS NOT NULL 
+      AND vendor_name IS NOT NULL
+) ranked
+WHERE rn = 1
+AND NOT EXISTS (
+    SELECT 1 FROM IOWA_TRANS.Producent p 
+    WHERE p.ProducentKod = ranked.vendor_no
+);
+
+
+-- Sklep
+INSERT INTO IOWA_TRANS.Sklep (SklepKod, SklepNazwa, SklepMiasto, SklepAdres)
+SELECT 
+    store,
+    name,
+    city,
+    address
+FROM (
+    SELECT 
+        CAST([store] as varchar(200)) as store,
+        CAST([name] as varchar(200)) as name,
+        CAST([city] as varchar(200)) as city,
+        CAST([address] as varchar(200)) as address,
+        ROW_NUMBER() OVER (PARTITION BY [store] ORDER BY [date] DESC) as rn
+    FROM IDH_Alkohol
+    WHERE store IS NOT NULL 
+      AND name IS NOT NULL 
+      AND city IS NOT NULL 
+      AND address IS NOT NULL
+) ranked
+WHERE rn = 1;
+
+
+--Cena
+INSERT INTO IOWA_TRANS.Cena (CenaDetal, CenaHurt)
+SELECT DISTINCT 
+    state_bottle_retail,
+    state_bottle_cost
+FROM IDH_Alkohol
+WHERE state_bottle_retail IS NOT NULL AND state_bottle_cost IS NOT NULL;
+
+--Alkochol
+
+INSERT INTO IOWA_TRANS.Alkohol (
+    AlkocholKod, 
+    AlkocholNazwa, 
+    KategoriaNazwa, 
+    ObjButelkiMl, 
+    Cena_IdCena,
+    Producent_IdProducent
+)
+SELECT 
+    ranked.itemno,
+    ranked.im_desc,
+    ranked.category_name,
+    ranked.bottle_volume_ml,
+    c.IdCena,
+    p.IdProducent
+FROM (
+    SELECT 
+        CAST([itemno] as varchar(50)) as itemno,
+        CAST([im_desc] as varchar(200)) as im_desc,
+        CAST([category_name] as varchar(200)) as category_name,
+        [bottle_volume_ml],
+        [state_bottle_retail],
+        [state_bottle_cost],
+        [vendor_no],
+        ROW_NUMBER() OVER (PARTITION BY [itemno] ORDER BY [date] DESC) as rn
+    FROM IDH_Alkohol
+    WHERE itemno IS NOT NULL 
+      AND im_desc IS NOT NULL
+      AND bottle_volume_ml IS NOT NULL
+      AND state_bottle_retail IS NOT NULL
+      AND state_bottle_cost IS NOT NULL
+      AND vendor_no IS NOT NULL
+) ranked
+JOIN IOWA_TRANS.Cena c ON ranked.state_bottle_retail = c.CenaDetal 
+                      AND ranked.state_bottle_cost = c.CenaHurt
+JOIN IOWA_TRANS.Producent p ON ranked.vendor_no = p.ProducentKod
+WHERE rn = 1
+AND NOT EXISTS (
+    SELECT 1 FROM IOWA_TRANS.Alkohol a 
+    WHERE a.AlkocholKod = ranked.itemno
+);
+
+
+TRUNCATE TABLE IOWA_TRANS.Rachunek
+
+-- Load Rachunek (Invoice) fact table
+ALTER TABLE IOWA_TRANS.Rachunek SET (LOCK_ESCALATION = DISABLE);
+INSERT INTO IOWA_TRANS.Rachunek WITH (TABLOCK) (
+    Sklep_IdSklep, 
+    Alkohol_IdAlkochol, 
+    RachunekSuma, 
+    RachunekIloscButelek, 
+    RachunekLitrarz,
+    RachunekData
+)
+SELECT 
+    s.IdSklep,
+    a.IdAlkochol,
+    ia.sale_dollars AS RachunekSuma,
+    ia.sale_bottles AS RachunekIloscButelek,
+    ia.sale_liters AS RachunekLitrarz,
+    ia.date AS RachunekData
+FROM 
+    IDH_Alkohol ia
+    JOIN IOWA_TRANS.Sklep s ON ia.store = s.SklepKod
+    JOIN IOWA_TRANS.Alkohol a ON ia.itemno = a.AlkocholKod
+WHERE 
+    ia.sale_dollars IS NOT NULL 
+    AND ia.sale_bottles IS NOT NULL 
+    AND ia.sale_liters IS NOT NULL
+    AND ia.date IS NOT NULL;
+
+
+SELECT AlkocholKod, COUNT(*) 
+FROM IOWA_TRANS.Alkohol
+GROUP BY AlkocholKod
+HAVING COUNT(*) > 1;
+	
+SELECT ProducentKod, COUNT(*) 
+FROM IOWA_TRANS.Producent
+GROUP BY ProducentKod
+HAVING COUNT(*) > 1;
+
+SELECT SklepKod, COUNT(*) 
+FROM IOWA_TRANS.Sklep
+GROUP BY SklepKod
+HAVING COUNT(*) > 1;
+
+
+SELECT *
+FROM IOWA_TRANS.Producent
+WHERE ProducentKod = '079'
+
+Select TOP(1000) * FROM IOWA_TRANS.Rachunek
+Select * FROM IOWA_TRANS.Sklep
+
+TRUNCATE TABLE IOWA_STAGE.SrzedazSt
+
+SELECT TOP(1000) * 
+FROM IOWA_STAGE.ProducentSt
+
+
+SELECT COUNT(1) 
+FROM IOWA_STAGE.SrzedazSt
+
+
+SELECT DISTINCT
+date
+FROM IDH_Alkohol
+
+SELECT TOP(10) *
+FROM IOWA_STAGE.CzasSt
+
+
+
+
+
+SELECT
+Sklep_IdSklep, Alkohol_IdAlkochol, RachunekData, SUM(RachunekSuma) AS RachunekSuma,
+ SUM(RachunekIloscButelek) AS RachunekIloscButelek,
+ SUM(RachunekLitrarz) AS RachunekLitrarz,
+ COUNT(IdRachunek) AS LiczbaRachunkow
+FROM        IOWA_TRANS.Rachunek
+GROUP BY RachunekData,Sklep_IdSklep,Alkohol_IdAlkochol
+ORDER BY RachunekData,Sklep_IdSklep,Alkohol_IdAlkochol
+
+SELECT *
+FROM IDH_Alkohol ia
+JOIN IOWA_TRANS.Sklep its on ia.store = its.SklepKod
+WHERE date = '2012-01-03' AND its.IdSklep = '248'
+
+
+SELECT TOP(1000) *
+FROM IOWA_STAGE.SrzedazSts
